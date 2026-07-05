@@ -10,7 +10,7 @@ KEY DESIGN RULE:
   This permanently prevents the "multiple values for keyword argument 'legend'" error.
 """
 
-from turtle import st
+import streamlit as st
 
 import pandas as pd
 import numpy as np
