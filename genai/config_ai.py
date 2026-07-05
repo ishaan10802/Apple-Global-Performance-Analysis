@@ -23,8 +23,11 @@ def get_openai_client():
     # 1. Streamlit secrets
     try:
         import streamlit as st
-        if hasattr(st, 'secrets') and 'openai_api_key' in st.secrets:
-            key = st.secrets['openai_api_key']
+        if hasattr(st, "secrets"):
+          key = (
+        st.secrets.get("OPENAI_API_KEY")
+        or st.secrets.get("openai_api_key")
+    )
     except Exception:
         pass
 
