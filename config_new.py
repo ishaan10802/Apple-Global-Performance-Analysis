@@ -15,16 +15,18 @@ load_dotenv()
 # ── Database Configuration ────────────────────────────────────────
 # For LOCAL development: fill in values directly below
 # For CLOUD deployment: set as environment variables in Streamlit Cloud
-
 DB_CONFIG = {
-    "host":     os.environ.get("DB_HOST",     "localhost"),
-    "port":     int(os.environ.get("DB_PORT", 5432)),
-    "database": os.environ.get("DB_NAME",     "apple_intelligence"),
-    "user":     os.environ.get("DB_USER",     "postgres"),
-    "password": os.environ.get("DB_PASSWORD")
+    "host": os.environ.get(
+        "DB_HOST",
+        "ep-round-field-aowbp3wj.c-2.ap-southeast-1.aws.neon.tech",
+    ),
+    "port": int(os.environ.get("DB_PORT", 5432)),
+    "database": os.environ.get("DB_NAME", "apple_intelligence"),
+    "user": os.environ.get("DB_USER", "neondb_owner"),
+    "password": os.environ.get("DB_PASSWORD"),
 }
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")     
 
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_MODEL   = "gpt-4o"
 MAX_TOKENS     = 1000
 
