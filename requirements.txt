@@ -17,7 +17,7 @@ streamlit==1.35.0
 streamlit-extras==0.4.2
 
 # AI
-openai==1.30.0
+openai==2.38.0
 
 # Export / reporting
 reportlab==4.1.0
