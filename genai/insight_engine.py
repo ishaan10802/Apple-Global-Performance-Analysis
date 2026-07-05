@@ -19,6 +19,12 @@ from genai.config_ai import get_openai_client, MODEL, MAX_TOKENS, TEMP_PROSE, TE
 
 # ─────────────────────────────────────────────────────────────────
 # Schema context sent to GPT-4o for SQL generation
+#
+# NOTE: this constant is currently unused anywhere in this file — neither
+# generate_insight() nor answer_question() reference it. Either wire it into
+# a future text-to-SQL path, or remove it so the file doesn't imply
+# behavior that doesn't exist. Leaving as-is for now since it may be used
+# elsewhere (e.g. narrative_writer.py).
 # ─────────────────────────────────────────────────────────────────
 _SCHEMA = """
 PostgreSQL database: apple_intelligence
@@ -101,6 +107,26 @@ def get_kpis() -> dict:
     }
 
 
+# ─────────────────────────────────────────────────────────────────
+# Formatting helpers — every number that reaches the LLM goes through
+# one of these, so formatting is consistent and a single None/NULL
+# metric can't crash prompt construction or produce something like
+# "143.76billion" or "42.6237.81" in the generated prose.
+# ─────────────────────────────────────────────────────────────────
+def _fmt_billions(value_millions) -> str:
+    """Format a $M figure as '$143.76 billion'. Null-safe."""
+    if value_millions is None:
+        return "$0.00 billion"
+    return f"${float(value_millions) / 1000:.2f} billion"
+
+
+def _fmt_pct(value, decimals: int = 1) -> str:
+    """Format a numeric percentage as '47.0%'. Null-safe."""
+    if value is None:
+        return "N/A"
+    return f"{float(value):.{decimals}f}%"
+
+
 def generate_insight(kpis: dict = None) -> str:
     """
     Send live KPI data to GPT-4o.
@@ -110,21 +136,58 @@ def generate_insight(kpis: dict = None) -> str:
     if kpis is None:
         kpis = get_kpis()
 
-    system = (
-        "You are a senior FP&A Director at Apple Inc writing the executive "
-        "quarterly business review for the CFO. Write directly — lead every "
-        "sentence with the most important fact. Use specific numbers. "
-        "3-4 tight paragraphs. No filler phrases like 'it is worth noting'."
+    system = """You are a Senior Strategy Consultant at McKinsey preparing an executive
+briefing for Apple's Board of Directors.
+
+Rules:
+- Write professional business English.
+- Use short paragraphs.
+- Always format money as "$143.76 billion" — always a space between the
+  number and the word, never "143.76billion".
+- Never concatenate two numbers together (e.g. "42.6237.81").
+- Never repeat the same KPI twice.
+- Explain the business implication of every KPI — don't just restate it.
+- Do not output JSON, bullet-dump numbers, or code.
+- Do not invent facts beyond what is supplied below.
+- Maximum 4 paragraphs."""
+
+    products_str = "\n".join(
+        f"- {p['product_name']}: {_fmt_billions(p.get('revenue_usd_millions'))} "
+        f"(Margin {_fmt_pct(p.get('gross_margin_pct'))}, "
+        f"Mix {_fmt_pct(p.get('revenue_mix_pct'))})"
+        for p in kpis["products"]
     )
-    user = (
-        f"Quarter: {kpis['quarter']}\n"
-        f"Revenue: ${kpis['total_rev']}M | QoQ: {kpis['qoq']}% | TTM: ${kpis['ttm']}M\n"
-        f"Blended Margin: {kpis['margin']}% | Services Mix: {kpis['svc_mix']}%\n"
-        f"Services Revenue: ${kpis['services_m']}M | Attach Rate: {kpis['attach']}%\n"
-        f"Products: {json.dumps(kpis['products'], indent=2)}\n"
-        f"Regions: {json.dumps(kpis['regions'], indent=2)}\n\n"
-        "Write the executive quarterly commentary now:"
+    regions_str = "\n".join(
+        f"- {r['region_name']}: {_fmt_billions(r.get('revenue_usd_millions'))} "
+        f"(Share {_fmt_pct(r.get('region_share_pct'))}, "
+        f"QoQ {_fmt_pct(r.get('qoq_growth_pct'))})"
+        for r in kpis["regions"]
     )
+
+    user = f"""Quarter: {kpis['quarter']}
+
+Headline figures:
+- Revenue: {_fmt_billions(kpis['total_rev'])} (QoQ growth: {_fmt_pct(kpis['qoq'])})
+- Trailing twelve months revenue: {_fmt_billions(kpis['ttm'])}
+- Blended gross margin: {_fmt_pct(kpis['margin'])}
+- Services revenue: {_fmt_billions(kpis['services_m'])} (Services mix: {_fmt_pct(kpis['svc_mix'])})
+- Services attach rate: {_fmt_pct(kpis['attach'])}
+
+Products:
+{products_str}
+
+Regions:
+{regions_str}
+
+Structure your answer as:
+1. One executive-summary opening paragraph.
+2. Revenue performance.
+3. Product mix.
+4. Regional performance and strategic implications.
+
+Do not simply repeat the KPI values above — explain why each one matters.
+Write the executive quarterly commentary now."""
+
     resp = client.chat.completions.create(
         model=MODEL, max_tokens=MAX_TOKENS, temperature=TEMP_PROSE,
         messages=[{"role": "system", "content": system},
@@ -141,7 +204,6 @@ def answer_question(question: str) -> str:
     """
     Natural-language Q&A against the Apple Global Performance Analysis warehouse.
     """
-
     client = get_openai_client()
 
     exec_df = query("""
@@ -150,6 +212,12 @@ def answer_question(question: str) -> str:
         ORDER BY fiscal_year, fiscal_quarter
     """)
 
+    # NOTE: this queries `vw_ai_revenue`, which isn't listed in the _SCHEMA
+    # block above (that documents vw_product_margin for product-level data).
+    # Confirm this view exists with these exact columns in your live DB —
+    # if it was renamed or never created, this call will throw. Worth
+    # pointing this at vw_product_margin instead, if vw_ai_revenue was a
+    # one-off view that didn't make it into the documented schema.
     product_df = query("""
         SELECT
             fiscal_year,
@@ -197,7 +265,7 @@ SERVICES PERFORMANCE
     resp = client.chat.completions.create(
         model=MODEL,
         max_tokens=800,
-        temperature=0,
+        temperature=TEMP_FACTS,
         messages=[
             {
                 "role": "system",
