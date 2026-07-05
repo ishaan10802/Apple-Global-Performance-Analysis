@@ -10,6 +10,7 @@ prophet==1.1.5
 
 # Visualization
 plotly==5.20.0
+matplotlib
 
 # Web framework
 streamlit==1.35.0
@@ -26,5 +27,3 @@ kaleido==0.2.1
 # Utilities
 python-dotenv==1.0.1
 requests==2.31.0
-
-matplotlib==3.10.9
