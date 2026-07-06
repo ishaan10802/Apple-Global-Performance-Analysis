@@ -13,7 +13,7 @@ plotly==5.20.0
 matplotlib
 
 # Web framework
-streamlit==1.35.0
+streamlit==1.49.0
 streamlit-extras==0.4.2
 
 # AI
