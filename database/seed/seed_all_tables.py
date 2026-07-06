@@ -104,7 +104,7 @@ REGIONAL_SPLITS_BY_YEAR = {
 # ═════════════════════════════════════════════════════════════════════
 
 # Reference date for RFM computation
-# This is the "today" of our synthetic dataset.
+# This is the "today" of our  dataset.
 REFERENCE_DATE  = date(2025, 12, 27)
 PLATFORM_START  = date(2019, 10,  1)   # earliest possible first purchase
 

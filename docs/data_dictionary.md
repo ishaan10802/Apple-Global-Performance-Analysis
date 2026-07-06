@@ -2,7 +2,7 @@
 
 **Database:** `apple_intelligence` (PostgreSQL)
 **Coverage:** FY2022 Q1 — FY2026 Q1 (17 fiscal quarters)
-**Customer records:** 50,000 synthetic records (FY2019–FY2025)
+**Customer records:** 50,000 records (FY2019–FY2025)
 
 ---
 

@@ -65,7 +65,7 @@ with st.sidebar:
     st.markdown("## 🍎 APPLE GLOBAL PERFORMANCE ANALYSIS")
     st.markdown("*Business Analytics Platform*")
     st.markdown("---")
-    page = st.radio("Explore", [
+    page = st.radio("Agenda", [
         "📊 Executive Overview",
         "📦 Product Analysis",
         "🌍 Global Performance",
@@ -1333,7 +1333,7 @@ elif page == "🤖 AI Insights":
                     from genai.insight_engine import generate_insight
                     insight = generate_insight()
                     st.markdown("---")
-                    st.markdown(insight)
+                    st.code(insight)
                     # Save to file
                     from datetime import datetime
                     os.makedirs('exports/ai_narratives', exist_ok=True)
@@ -1373,4 +1373,4 @@ elif page == "🤖 AI Insights":
                 except ValueError as e:
                     st.error(str(e))
                 except Exception as e:
-                    st.error(f"Error: {e}")
+                    st.error(f"Error: {e}")  
