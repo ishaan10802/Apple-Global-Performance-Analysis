@@ -42,7 +42,7 @@ def get_engine():
         f"@{c['host']}:{c['port']}/{c['database']}"
     )
 
-    print("DB URL =", url)
+    
 
     return create_engine(url)
 

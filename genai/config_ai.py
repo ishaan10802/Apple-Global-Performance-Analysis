@@ -25,9 +25,9 @@ def get_openai_client():
         import streamlit as st
         if hasattr(st, "secrets"):
           key = (
-        st.secrets.get("OPENAI_API_KEY")
-        or st.secrets.get("openai_api_key")
-    )
+              st.secrets.get("OPENAI_API_KEY")
+              or st.secrets.get("openai_api_key")
+          )
     except Exception:
         pass
 

@@ -1066,7 +1066,7 @@ elif page == "📈 Revenue Forecasting":
 # ════════════════════════════════════════════════════════════════════
 # PAGE 5 — Customer Segmentation
 # ════════════════════════════════════════════════════════════════════
-elif page == "👥 Customer Segmentation ":
+elif page == "👥 Customer Segmentation":
     st.title("Customer Segmentation")
     st.caption("RFM segmentation · Cohort Retention ")
     st.info("""
