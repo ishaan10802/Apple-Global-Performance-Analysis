@@ -70,8 +70,8 @@ with st.sidebar:
         "📦 Product Analysis",
         "🌍 Global Performance",
         "📈 Revenue Forecasting",
-        "👥 Customer Segmentation (Synthetic)",
-        "🤖 AI Insights",
+        "👥 Customer Segmentation",
+        "🤖 Analytics Assistant",
     ])
     st.markdown("---")
     st.caption("Data: FY2022–FY2026 Q1")
@@ -1064,10 +1064,10 @@ elif page == "📈 Revenue Forecasting":
     )
 
 # ════════════════════════════════════════════════════════════════════
-# PAGE 5 — Customer Segmentation (Synthetic)
+# PAGE 5 — Customer Segmentation
 # ════════════════════════════════════════════════════════════════════
-elif page == "👥 Customer Segmentation (Synthetic)":
-    st.title("Customer Segmentation (Synthetic)")
+elif page == "👥 Customer Segmentation ":
+    st.title("Customer Segmentation")
     st.caption("RFM segmentation · Cohort Retention ")
     st.info("""
 About this dataset: Apple does not publicly disclose customer-level purchase data, cohort histories, or retention metrics. This section uses 50,000 synthetic customer records generated to realistically simulate behavioral patterns within Apple's ecosystem (FY2019–FY2025).
@@ -1318,8 +1318,8 @@ Revenue values in this section are simulated for analytical demonstration purpos
 # ════════════════════════════════════════════════════════════════════
 # PAGE 6 — AI INSIGHTS
 # ════════════════════════════════════════════════════════════════════
-elif page == "🤖 AI Insights":
-    st.title("AI Business Insights")
+elif page == "🤖 Analytics Assistant":
+    st.title("Customer Analytics Assistant")
     st.caption("Powered by GPT-4o · Live data from PostgreSQL warehouse")
 
     tab1, tab2 = st.tabs(["📝 Executive Commentary", "💬 Ask a Question"])
