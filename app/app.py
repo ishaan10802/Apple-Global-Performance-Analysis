@@ -376,28 +376,40 @@ elif page == "📦 Product Analysis":
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Services Stability</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Services is the only row with zero red quarters</span> across the entire heatmap — every single quarter posted positive YoY growth, ranging from +5.5% to +16.3%, and it is accelerating again into FY2026 Q1 at +13.9%. No other product line comes close to this consistency.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Services delivered positive YoY growth every quarter.<br>
+      &bull; Growth remained the portfolio's most consistent.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,159,10,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Hardware Volatility</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Mac and iPad show the widest swings on the board</span> — Mac cratered to -33.8% in FY2023 Q4 before rebounding to +14.8% by FY2025 Q3, and iPad ranged from -25.3% to +29.6% in the same window. These are launch-cycle-driven swings, not steady demand trends, which is exactly why both segments also carry the highest forecast error (MAPE) elsewhere in this dashboard.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Mac and iPad showed the highest volatility.<br>
+      &bull; Performance remained heavily launch-cycle driven.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,69,58,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF453A;letter-spacing:0.08em;text-transform:uppercase;">Wearables Drag</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Wearables & Home is the only line trending net negative</span> — 9 of the 13 quarters shown are red, and even the FY2026 Q1 print of +6.3% doesn't offset the multi-year decline visible across the row. This is the segment most exposed to a reinvest-or-harvest decision.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Mac and iPad showed the highest volatility.<br>
+      &bull; Performance remained heavily launch-cycle driven.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Read this heatmap column-by-column, not just row-by-row: FY2026 Q1 is the first quarter in the window where every single product line is green simultaneously, which is rare and worth flagging as a genuine broad-based quarter rather than a one-product print.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; FY2026 Q1 delivered broad-based product growth.<br>
+      &bull; Portfolio momentum strengthened across all categories.
+    </p>
     </div>
 
     </div>
