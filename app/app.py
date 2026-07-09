@@ -123,7 +123,7 @@ if page == "📊 Executive Overview":
     background:#1C1C1E;
     padding:28px 32px;
     border-radius:16px;
-    border-top:3px solid #BF94FF;
+    border-top:3px solid #D1D1D6;
     margin-top:18px;
     margin-bottom:24px;
     box-shadow:0 4px 24px rgba(0,0,0,0.40);;">
@@ -141,7 +141,7 @@ if page == "📊 Executive Overview":
     font-weight:600;
     letter-spacing:0.12em;
     text-transform:uppercase;
-    color:#BF94FF;">
+    color:#F5F5F7;">
     Key Findings
     </span>
 
@@ -156,7 +156,7 @@ if page == "📊 Executive Overview":
     letter-spacing:0.06em;
     text-transform:uppercase;
     color:rgba(255,255,255,0.45);">
-    Board Summary
+    BUSINESS HIGHLIGHTS
     </span>
 
     </div>
@@ -164,7 +164,7 @@ if page == "📊 Executive Overview":
    <div style="display:grid;gap:14px;">
 
    <div style="
-   background:rgba(255,255,255,0.04);
+   background:rgba(255,255,255,0.055);
    border-radius:10px;
    padding:15px 18px;">
 
