@@ -800,28 +800,41 @@ elif page == "🌍 Global Performance":
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Core Markets</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Americas (42.6%)</span> remains Apple's largest and most stable earnings base — the anchor market providing consistent revenue floor across all cycle conditions. <span style="color:#F5F5F7;font-weight:500;">Europe (26.3%)</span> follows as a structurally reliable contributor with long-term growth consistency. Together they represent <span style="color:#F5F5F7;font-weight:500;">68.9% of total revenue</span> — the foundation that funds all growth investments globally.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Americas remained Apple's largest revenue contributor.<br>
+      &bull; Europe continued delivering stable long-term growth.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,69,58,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF453A;letter-spacing:0.08em;text-transform:uppercase;">China Risk</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Greater China's revenue share has declined from ~20% in FY2022 to 16.4% in FY2026</span> — a structural erosion, not a cyclical dip. On a TTM revenue base of <span style="color:#F5F5F7;font-weight:500;">$435.6B</span>, each percentage point of lost China share represents approximately <span style="color:#F5F5F7;font-weight:500;">$4.4B in annual revenue exposure</span>. The 3.6%  decline since FY2022 implies ~$15.7B of annualised revenue has already been displaced — roughly equivalent to losing the entire Mac segment.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; China revenue share continued declining since FY2022.<br>
+      &bull; Sustained weakness increases regional concentration risk.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,159,10,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Asia Pacific Opportunity</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Rest of Asia Pacific (8.1%)</span> is structurally under-indexed relative to population and GDP. India's own rapidly expanding middle-class smartphone adoption — sits inside this 8.1% bucket, currently Apple's most underpenetrated major market. This is the most credible and geopolitically low-risk hedge to China share erosion available.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Asia Pacific offers significant long-term expansion potential.<br>
+      &bull; India remains a strategic growth opportunity.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Protect Americas and Europe as the stable earnings floor. Commission a formal China contingency scenario analysis — bear (10% share), base (15%), bull (18% recovery) — each implying a different India investment pace and timeline. A dedicated India market plan with board-level milestones is the single most important regional action available to offset geopolitical concentration risk over the next five years.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Americas remains Apple's primary earnings engine.<br>
+      &bull; China weakness reinforces regional diversification priorities.<br>
+      &bull; India offers the strongest long-term expansion opportunity.
+    </p>
     </div>
 
     </div>
