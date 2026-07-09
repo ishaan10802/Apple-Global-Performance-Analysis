@@ -58,45 +58,157 @@ def _write_section(section_key: str,
     """Write one report section using GPT-4o."""
     prompts = {
         "financial_summary": (
-            f"Write the FINANCIAL SUMMARY section (3 paragraphs).\n"
-            f"Revenue: ${kpis['total_rev']}M | QoQ: {kpis['qoq']}% | "
-            f"TTM: ${kpis['ttm']}M | Blended Margin: {kpis['margin']}%\n"
-            f"Products: {json.dumps(kpis['products'])}\n"
-            "Lead with total revenue. Discuss margin expansion. "
-            "End with TTM trajectory."
+            f"""
+Write the FINANCIAL SUMMARY.
+
+Revenue:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Margin Signal:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Inference:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Revenue: ${kpis['total_rev']}M
+QoQ: {kpis['qoq']}%
+TTM: ${kpis['ttm']}M
+Blended Margin: {kpis['margin']}%
+Products: {json.dumps(kpis['products'])}
+
+Rules:
+• Use only provided data.
+• One line per bullet.
+• Maximum 15 words.
+• No paragraphs.
+• No introductions or conclusions.
+• Board-level language only.
+"""
         ),
+
         "services_analysis": (
-            f"Write the SERVICES BUSINESS ANALYSIS section (2 paragraphs).\n"
-            f"Services Revenue: ${kpis['services_m']}M | "
-            f"Mix: {kpis['svc_mix']}% | Attach Rate: {kpis['attach']}%\n"
-            "Explain the strategic importance of Services attach rate. "
-            "Quantify the margin premium of Services (~75%) vs Hardware (~37%). "
-            "Explain what growing Services mix means for blended margin."
+            f"""
+Write the SERVICES BUSINESS ANALYSIS.
+
+Margin Premium:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Composition:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Inference:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Services Revenue: ${kpis['services_m']}M
+Services Mix: {kpis['svc_mix']}%
+Attach Rate: {kpis['attach']}%
+
+Rules:
+• Quantify Services (~75%) vs Hardware (~37%) margins.
+• Use only provided data.
+• One line per bullet.
+• Maximum 15 words.
+• No paragraphs.
+• Board-level language only.
+"""
         ),
 
         "customer_intelligence": (
-            f"Write the SYNTHETIC CUSTOMER INTELLIGENCE section (2 paragraphs).\n"
-            f"Segments: {json.dumps(customer['segments'][:4])}\n"
-            f"Total CLV portfolio: ${customer['total_clv']}B\n"
-            "Discuss revenue concentration across customer segments. "
-            "Highlight the role of Champions and Loyal Customers. "
-            "Reference CLV portfolio value. "
-            "Do not discuss churn rates."
+            f"""
+Write the CUSTOMER INTELLIGENCE section.
+
+Revenue Concentration:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Customer Value:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Inference:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Segments:
+{json.dumps(customer['segments'][:4])}
+
+Total CLV:
+${customer['total_clv']}B
+
+Rules:
+• Mention Champions and Loyal Customers.
+• Do not mention churn.
+• Maximum 15 words.
+• No paragraphs.
+• Board-level language only.
+"""
         ),
-        
+
         "geographic_risks": (
-            f"Write the GEOGRAPHIC RISK ASSESSMENT section (2 paragraphs).\n"
-            f"Regions: {json.dumps(kpis['regions'])}\n"
-            "Lead with Americas dominance. Address China share decline "
-            "from 19% (FY2022) to 15.5% (FY2025) explicitly. "
-            "Identify high-growth markets."
+            f"""
+Write the GEOGRAPHIC RISK ASSESSMENT.
+
+Regional Performance:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+China Risk:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Inference:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Regions:
+{json.dumps(kpis['regions'])}
+
+Rules:
+• Mention Americas leadership.
+• Mention China decline (19% → 15.5%).
+• Maximum 15 words.
+• No paragraphs.
+• Board-level language only.
+"""
         ),
+
         "strategic_outlook": (
-            f"Write the STRATEGIC OUTLOOK section (2 paragraphs).\n"
-            f"Current quarter: {kpis['quarter']} | Revenue: ${kpis['total_rev']}M\n"
-            "Discuss: Apple Intelligence / AI integration, Services growth runway, "
-            "iPhone 17 cycle, Vision Pro positioning, China risk mitigation. "
-            "End with a single forward-looking guidance sentence."
+            f"""
+Write the STRATEGIC OUTLOOK.
+
+Growth Drivers:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Strategic Priorities:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Outlook:
+- 2 executive bullet points.
+- Maximum 15 words each.
+
+Quarter:
+{kpis['quarter']}
+
+Revenue:
+${kpis['total_rev']}M
+
+Rules:
+• Mention Apple Intelligence.
+• Mention Services.
+• Mention iPhone cycle.
+• Mention China.
+• Maximum 15 words.
+• No paragraphs.
+• Board-level language only.
+"""
         ),
     }
     prompt = prompts.get(section_key, "Write a business analysis section.")
