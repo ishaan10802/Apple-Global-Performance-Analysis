@@ -1186,21 +1186,30 @@ Revenue values in this section are simulated for analytical demonstration purpos
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Concentration</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Champions (47.0%)</span> and <span style="color:#F5F5F7;font-weight:500;">Loyal Customers (41.8%)</span> together contribute <span style="color:#F5F5F7;font-weight:500;">88.8% of total revenue</span> from just two RFM segments. This is a high-quality customer base — but also a brittle one. The remaining six segments collectively generate only 11.2%, meaning a churn event in the top two tiers is not a customer problem, it is a P&L event.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Champions and Loyal Customers generated nearly 89% revenue.<br>
+      &bull; Revenue remains concentrated within two customer segments.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,159,10,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Early Warning</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">At Risk (0.6%)</span> and <span style="color:#F5F5F7;font-weight:500;">Lost Customers (0.2%)</span> represent a small revenue share today — but these segments are the leading indicator of future churn, not the lagging one. In Apple's closed ecosystem, a customer who exits is extremely difficult and expensive to re-acquire. The level is reassuring; the trend direction is what requires active monitoring each quarter.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; At-Risk customers currently represent a limited share.<br>
+      &bull; Monitor trends before revenue concentration deteriorates.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Protecting Champions and Loyal Customers is not a CRM priority — it is a revenue protection priority. A dedicated retention programme for the top two tiers (early access, loyalty benefits, personalised support) will deliver a higher ROI than any customer acquisition spend. Set a board-level threshold: if At Risk share crosses 1.0% in any quarter, trigger an executive retention review.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Retaining premium customers protects long-term revenue.<br>
+      &bull; Early intervention reduces future churn exposure.
+    </p>
     </div>
 
     </div>
@@ -1222,21 +1231,30 @@ Revenue values in this section are simulated for analytical demonstration purpos
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Early Strength</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Retention across <span style="color:#F5F5F7;font-weight:500;">Q+0 and Q+1 is near-perfect (98–100%)</span> for every cohort in the matrix. Q+2 holds strong at 86–94%. This early-period retention profile reflects the stickiness of Apple's hardware-software ecosystem — once a customer is active, the switching cost in the first two quarters is high enough to make churn a non-event.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Early cohorts maintained exceptionally high retention.<br>
+      &bull; Apple's ecosystem continues driving customer stickiness.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,159,10,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Mid-Term Decay</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">By <span style="color:#F5F5F7;font-weight:500;">Q+3 and Q+4</span>, older cohorts show meaningful decay — 65–86% at Q+3, falling further by Q+5. The best-matured cohort visible (2024Q1) retains <span style="color:#F5F5F7;font-weight:500;">60.4% at Q+5</span>, setting the current benchmark floor. This decay window (Q+3 to Q+5) is precisely where Services subscription attach rate becomes the primary retention lever — customers enrolled in Apple One, iCloud, or AppleCare are structurally less likely to churn.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Retention gradually declined after Q+3.<br>
+      &bull; Services attachment helps sustain long-term engagement.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">The Q+3 inflection point is the intervention window. Customers who reach Q+3 without a Services subscription attach are the highest-churn-risk cohort. A targeted Services onboarding nudge at Q+2 — before decay accelerates — is the highest-leverage CLV intervention available. Improving Q+5 retention by even 5 percentage points across all cohorts compounds into material long-term revenue uplift.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Q+3 marks the key customer intervention window.<br>
+      &bull; Services adoption supports higher lifetime value.
+    </p>
     </div>
 
     </div>
