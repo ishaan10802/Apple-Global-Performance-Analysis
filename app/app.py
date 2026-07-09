@@ -1341,10 +1341,10 @@ elif page == "🤖 Analytics Assistant":
                     path = f'exports/ai_narratives/insight_{ts}.txt'
                     with open(path, 'w') as f:
                         f.write(insight)
-                    st.success(f"Saved to {path}")
-                    st.download_button("📥 Download Insight",
+                    st.success("✅ Executive brief generated successfully.")
+                    st.download_button("📥 Download Executive Brief",
                                         data=insight,
-                                        file_name="executive_insight.txt",
+                                        file_name="executive_brief.txt",
                                         mime="text/plain")
                 except ValueError as e:
                     st.error(str(e))
