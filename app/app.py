@@ -1398,41 +1398,10 @@ elif page == "🤖 Analytics Assistant":
     st.title("Customer Analytics Assistant")
     st.caption("Powered by GPT-4o · Live data from PostgreSQL warehouse")
 
-    tab1, tab2 = st.tabs(["📝 Executive Commentary", "💬 Ask a Question"])
+    tab = st.tabs(["💬 Ask a Question"])
 
-    with tab1:
-        st.subheader("Performance Brief")
-        st.info("Summary of current business performance and key metrics.")
-        if st.button("🚀 Generate Executive Brief", type="primary"):
-            with st.spinner("GPT-4o is analyzing your data..."):
-                try:
-                    from genai.insight_engine import generate_insight
-
-                    insight = generate_insight()
-
-                    # Remove any accidental markdown/code formatting
-                    insight = insight.replace("```", "").replace("`", "")
-
-                    st.markdown("---")
-                    st.markdown(insight)
-                    # Save to file
-                    from datetime import datetime
-                    os.makedirs('exports/ai_narratives', exist_ok=True)
-                    ts   = datetime.now().strftime('%Y%m%d_%H%M%S')
-                    path = f'exports/ai_narratives/insight_{ts}.txt'
-                    with open(path, 'w') as f:
-                        f.write(insight)
-                    st.success("✅ Executive brief generated successfully.")
-                    st.download_button("📥 Download Executive Brief",
-                                        data=insight,
-                                        file_name="executive_brief.txt",
-                                        mime="text/plain")
-                except ValueError as e:
-                    st.error(str(e))
-                except Exception as e:
-                    st.error(f"Error: {e}")
-
-    with tab2:
+    
+    with tab:
         st.subheader("Ask Anything About Apple's Business")
         st.info("Type any question in plain English. AI analyzes your live database and answers.")
         examples = [
