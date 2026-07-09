@@ -1325,15 +1325,15 @@ elif page == "🤖 Analytics Assistant":
     tab1, tab2 = st.tabs(["📝 Executive Commentary", "💬 Ask a Question"])
 
     with tab1:
-        st.subheader("Auto-Generated Executive Commentary")
-        st.info("GPT-4o analyzes your live KPI data and writes an executive quarterly review.")
-        if st.button("🚀 Generate Executive Insight", type="primary"):
+        st.subheader("Performance Brief")
+        st.info("Summary of current business performance and key metrics.")
+        if st.button("🚀 Generate Executive Brief", type="primary"):
             with st.spinner("GPT-4o is analyzing your data..."):
                 try:
                     from genai.insight_engine import generate_insight
                     insight = generate_insight()
                     st.markdown("---")
-                    st.code(insight)
+                    st.markdown(insight)
                     # Save to file
                     from datetime import datetime
                     os.makedirs('exports/ai_narratives', exist_ok=True)

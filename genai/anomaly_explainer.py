@@ -6,7 +6,7 @@ Scans revenue data for statistically unusual patterns
 using z-score analysis, then asks GPT-4o to explain
 each anomaly in real-world business context.
 
-Output: text report saved to exports/ai_narratives/
+Output: text report ✅ Executive brief generated successfully.
 """
 import os
 import sys

@@ -2,7 +2,7 @@
 """
 Executive Narrative Writer.
 Generates a complete multi-section written report from live data.
-Output: formatted text file saved to exports/ai_narratives/
+Output: formatted text file ✅ Executive brief generated successfully.
 
 Sections:
   1. Financial Summary
