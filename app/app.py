@@ -190,21 +190,30 @@ if page == "📊 Executive Overview":
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Revenue</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">The <span style="color:#F5F5F7;font-weight:500;">40.3% revenue surge in FY2026 Q1</span> was driven primarily by iPhone — producing the strongest single quarter in the entire dataset at ~$87B. This is not a broad-based recovery; it is a concentrated super-cycle print anchored to one product line, which makes the quarter's sustainability directly dependent on whether the iPhone upgrade cycle holds through Q2–Q4.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+     • FY2026 Q1 revenue grew 40.3%, led by iPhone.<br>
+     • Growth remains concentrated within the flagship product portfolio.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,159,10,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Margin Signal</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Despite record revenue, <span style="color:#F5F5F7;font-weight:500;">blended gross margin declined 0.2 percentage points</span> — a structurally important signal. Hardware volume growth is mechanically diluting the blended margin because hardware (35–40%) runs far below Services (76%). Every percentage point of revenue driven by hardware rather than Services costs approximately 30–35 bps of blended margin.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+     • Hardware mix reduced blended gross margin.<br>
+     • Services continues supporting overall profitability.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Long-term profitability depends on <span style="color:#F5F5F7;font-weight:500;">growing Services in parallel with hardware</span> — not sequentially. A hardware upcycle that outpaces services attach rate improvement is a short-term revenue win but a structural margin headwind. The board metric to watch is gross profit dollars (not %) to confirm absolute margin dollars are still expanding even as the percentage temporarily compresses.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+     • Services expansion offsets hardware margin pressure.<br>
+     • Gross profit growth remains the key board metric.
+    </p>
     </div>
 
     </div>
@@ -239,21 +248,30 @@ if page == "📊 Executive Overview":
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Margin Premium</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Services consistently delivers gross margins of <span style="color:#F5F5F7;font-weight:500;">70–76%</span> — nearly <span style="color:#F5F5F7;font-weight:500;">2× the profitability</span> of the hardware business (35–40%). This spread has widened over the four-year window, reaching its peak in FY2025–FY2026 at ~76%, meaning Services is not just growing — it is getting structurally more profitable as it scales. Each dollar of Services revenue generates approximately twice the gross profit of a dollar of hardware revenue.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+     • Services margins consistently exceed hardware by nearly 2×.<br>
+     • High-margin mix strengthens long-term profitability.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(100,210,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#64D2FF;letter-spacing:0.08em;text-transform:uppercase;">Composition</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Services revenue reached a record <span style="color:#F5F5F7;font-weight:500;">$30.0B in FY2026 Q1</span>, supported by seven distinct sub-businesses: <span style="color:#F5F5F7;font-weight:500;">App Store, iCloud, Apple Music, Apple TV+, AppleCare, Apple Pay,</span> and <span style="color:#F5F5F7;font-weight:500;">Apple One</span>. This diversification within the segment is the key differentiator from hardware — no single sub-line creates binary launch-cycle risk, which is why Services MAPE (3.6%) is the lowest forecast error of any segment in the portfolio.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+     • Services reached a record $30.0B in FY2026 Q1.<br>
+     • Diversified ecosystem reduces hardware cycle dependence.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Continued Services expansion improves three things simultaneously: <span style="color:#F5F5F7;font-weight:500;">blended gross margin</span> (mix shift toward 76% GM), <span style="color:#F5F5F7;font-weight:500;">revenue predictability</span> (annuity-like subscription base vs. hardware lumpiness), and <span style="color:#F5F5F7;font-weight:500;">valuation multiple</span> (software comps vs. hardware comps). At 25%+ services mix — projected by FY2028 at current trajectory — analysts will increasingly apply a blended multiple, not a pure hardware multiple, to the stock.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+     • Recurring Services revenue improves earnings resilience.<br>
+     • Expanding mix supports sustainable margin expansion.
+    </p>
     </div>
 
     </div>
