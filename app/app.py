@@ -190,9 +190,12 @@ if page == "📊 Executive Overview":
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Revenue</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-      FY2026 Q1 revenue grew 40.3%, led by iPhone.<br>
-      Growth remains concentrated within the flagship product portfolio.
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.8;">
+    <span style="display:inline-block;width:6px;height:6px;background:#0A84FF;border-radius:50%;margin-right:8px;"></span>
+    FY2026 Q1 revenue grew 40.3%, led by iPhone.<br>
+
+    <span style="display:inline-block;width:6px;height:6px;background:#0A84FF;border-radius:50%;margin-right:8px;"></span>
+    Growth remained concentrated within the flagship portfolio.
     </p>
     </div>
 
