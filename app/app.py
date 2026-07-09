@@ -123,7 +123,7 @@ if page == "📊 Executive Overview":
     background:#1C1C1E;
     padding:28px 32px;
     border-radius:16px;
-    border-top:3px solid #4F6682;
+    border-top:3px solid #5E7693;
     margin-top:18px;
     margin-bottom:24px;
     box-shadow:0 4px 24px rgba(0,0,0,0.40);;">
