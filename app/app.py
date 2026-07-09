@@ -191,8 +191,8 @@ if page == "📊 Executive Overview":
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Revenue</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-     • FY2026 Q1 revenue grew 40.3%, led by iPhone.<br>
-     • Growth remains concentrated within the flagship product portfolio.
+      FY2026 Q1 revenue grew 40.3%, led by iPhone.<br>
+      Growth remains concentrated within the flagship product portfolio.
     </p>
     </div>
 
@@ -201,8 +201,8 @@ if page == "📊 Executive Overview":
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Margin Signal</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-     • Hardware mix reduced blended gross margin.<br>
-     • Services continues supporting overall profitability.
+      Hardware mix reduced blended gross margin.<br>
+      Services continues supporting overall profitability.
     </p>
     </div>
 
@@ -211,8 +211,8 @@ if page == "📊 Executive Overview":
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-     • Services expansion offsets hardware margin pressure.<br>
-     • Gross profit growth remains the key board metric.
+      Services expansion offsets hardware margin pressure.<br>
+      Gross profit growth remains the key board metric.
     </p>
     </div>
 
@@ -249,8 +249,8 @@ if page == "📊 Executive Overview":
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Margin Premium</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-     • Services margins consistently exceed hardware by nearly 2×.<br>
-     • High-margin mix strengthens long-term profitability.
+      Services margins consistently exceed hardware by nearly 2×.<br>
+      High-margin mix strengthens long-term profitability.
     </p>
     </div>
 
@@ -259,8 +259,8 @@ if page == "📊 Executive Overview":
     <span style="font-size:11px;font-weight:600;color:#64D2FF;letter-spacing:0.08em;text-transform:uppercase;">Composition</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-     • Services reached a record $30.0B in FY2026 Q1.<br>
-     • Diversified ecosystem reduces hardware cycle dependence.
+      Services reached a record $30.0B in FY2026 Q1.<br>
+      Diversified ecosystem reduces hardware cycle dependence.
     </p>
     </div>
 
@@ -269,8 +269,8 @@ if page == "📊 Executive Overview":
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-     • Recurring Services revenue improves earnings resilience.<br>
-     • Expanding mix supports sustainable margin expansion.
+      Recurring Services revenue improves earnings resilience.<br>
+      Expanding mix supports sustainable margin expansion.
     </p>
     </div>
 
