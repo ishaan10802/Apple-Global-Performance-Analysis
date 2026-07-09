@@ -1338,7 +1338,7 @@ elif page == "🤖 Analytics Assistant":
                     insight = insight.replace("```", "").replace("`", "")
 
                     st.markdown("---")
-                    st.write(insight)
+                    st.markdown(insight)
                     # Save to file
                     from datetime import datetime
                     os.makedirs('exports/ai_narratives', exist_ok=True)
