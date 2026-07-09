@@ -1398,7 +1398,7 @@ elif page == "🤖 Analytics Assistant":
     st.title("Customer Analytics Assistant")
     st.caption("Powered by GPT-4o · Live data from PostgreSQL warehouse")
 
-    tab = st.tabs(["💬 Ask a Question"])
+    tab = st.tabs(["💬 Ask a Question"])[0]
 
     
     with tab:
