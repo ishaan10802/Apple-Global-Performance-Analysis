@@ -1333,7 +1333,7 @@ elif page == "🤖 Analytics Assistant":
                     from genai.insight_engine import generate_insight
                     insight = generate_insight()
                     st.markdown("---")
-                    st.markdown(insight)
+                    st.write(insight)
                     # Save to file
                     from datetime import datetime
                     os.makedirs('exports/ai_narratives', exist_ok=True)
