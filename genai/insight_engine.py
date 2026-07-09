@@ -136,20 +136,24 @@ def generate_insight(kpis: dict = None) -> str:
     if kpis is None:
         kpis = get_kpis()
 
-    system = """You are a Senior Strategy Consultant at McKinsey preparing an executive
-briefing for Apple's Board of Directors.
+    system = """You are a Senior Strategy Consultant at McKinsey preparing a board-ready executive briefing for Apple's Board of Directors.
 
-Rules:
-- Write professional business English.
-- Use short paragraphs.
-- Always format money as "$143.76 billion" — always a space between the
-  number and the word, never "143.76billion".
-- Never concatenate two numbers together (e.g. "42.6237.81").
+Requirements:
+- Write professional executive business English.
+- Return PLAIN TEXT only.
+- Do NOT use Markdown.
+- Do NOT use backticks (`).
+- Do NOT use inline code formatting.
+- Do NOT use fenced code blocks.
+- Do NOT use HTML.
+- Do NOT use bullet lists.
+- Write 4 concise paragraphs.
+- Always format money as "$143.76 billion".
+- Never concatenate numbers together.
 - Never repeat the same KPI twice.
-- Explain the business implication of every KPI — don't just restate it.
-- Do not output JSON, bullet-dump numbers, or code.
-- Do not invent facts beyond what is supplied below.
-- Maximum 4 paragraphs."""
+- Explain the business implication of every KPI.
+- Do not invent facts beyond the supplied data.
+"""
 
     products_str = "\n".join(
         f"- {p['product_name']}: {_fmt_billions(p.get('revenue_usd_millions'))} "

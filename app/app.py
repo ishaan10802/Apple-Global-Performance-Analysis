@@ -1331,7 +1331,12 @@ elif page == "🤖 Analytics Assistant":
             with st.spinner("GPT-4o is analyzing your data..."):
                 try:
                     from genai.insight_engine import generate_insight
+
                     insight = generate_insight()
+
+                    # Remove any accidental markdown/code formatting
+                    insight = insight.replace("```", "").replace("`", "")
+
                     st.markdown("---")
                     st.write(insight)
                     # Save to file
