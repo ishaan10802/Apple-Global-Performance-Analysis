@@ -167,30 +167,26 @@ Requirements:
         f"QoQ {_fmt_pct(r.get('qoq_growth_pct'))})"
         for r in kpis["regions"]
     )
+    user = f"""
+You are preparing a board-ready executive briefing for Apple.
 
-    user = f"""Quarter: {kpis['quarter']}
+Use ONLY the KPI values provided below.
 
-Headline figures:
-- Revenue: {_fmt_billions(kpis['total_rev'])} (QoQ growth: {_fmt_pct(kpis['qoq'])})
-- Trailing twelve months revenue: {_fmt_billions(kpis['ttm'])}
-- Blended gross margin: {_fmt_pct(kpis['margin'])}
-- Services revenue: {_fmt_billions(kpis['services_m'])} (Services mix: {_fmt_pct(kpis['svc_mix'])})
-- Services attach rate: {_fmt_pct(kpis['attach'])}
+Rules:
+- Do not invent any numbers.
+- Do not repeat numbers.
+- Do not merge two different KPIs into one sentence.
+- Do not perform calculations.
+- Do not infer missing values.
+- Return plain text only.
+- Write exactly four paragraphs.
 
-Products:
-{products_str}
+KPI DATA (JSON):
 
-Regions:
-{regions_str}
+{json.dumps(kpis, indent=2)}
 
-Structure your answer as:
-1. One executive-summary opening paragraph.
-2. Revenue performance.
-3. Product mix.
-4. Regional performance and strategic implications.
-
-Do not simply repeat the KPI values above — explain why each one matters.
-Write the executive quarterly commentary now."""
+Write the executive commentary now.
+"""
 
     resp = client.chat.completions.create(
         model=MODEL, max_tokens=MAX_TOKENS, temperature=TEMP_PROSE,
