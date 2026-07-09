@@ -986,35 +986,50 @@ elif page == "📈 Revenue Forecasting":
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">High Accuracy</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Services (3.6% MAPE)</span> and <span style="color:#F5F5F7;font-weight:500;">Wearables (4.1% MAPE)</span> deliver the highest forecast accuracy in the portfolio — reflecting their subscription-annuity and seasonal-but-predictable revenue structures respectively. <span style="color:#F5F5F7;font-weight:500;">iPad at 8.0%</span> remains within an acceptable planning range. These three segments can anchor narrow-band financial guidance with confidence.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Services delivered the highest forecast accuracy.<br>
+      &bull; Wearables and iPad remained predictably forecastable.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,159,10,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF9F0A;letter-spacing:0.08em;text-transform:uppercase;">Elevated Risk</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Forecast uncertainty increases materially for <span style="color:#F5F5F7;font-weight:500;">iPhone (13.6% MAPE)</span> and <span style="color:#F5F5F7;font-weight:500;">Mac (19.3% MAPE)</span> — the two highest error rates in the portfolio. Both reflect binary product-launch dynamics: a single new SKU can swing quarterly revenue 20–30% in ways no time-series model can anticipate. Planning assumptions for these segments should carry explicitly wider confidence bands.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; iPhone and Mac carried the highest forecast uncertainty.<br>
+      &bull; Product launches continue driving forecast volatility.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(48,209,88,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#30D158;letter-spacing:0.08em;text-transform:uppercase;">Services Path</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">The model projects <span style="color:#F5F5F7;font-weight:500;">Services revenue growing from ~$30B to $32–34B</span> over the next six quarters — a narrow-band, high-conviction forecast reinforcing its role as Apple's most predictable and highest-margin business.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Services revenue is projected to expand steadily.<br>
+      &bull; High-margin recurring growth remains structurally resilient.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(255,69,58,0.15);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#FF453A;letter-spacing:0.08em;text-transform:uppercase;">Wearables Risk</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;"><span style="color:#F5F5F7;font-weight:500;">Wearables revenue is projected to decline from ~$11.5B to ~$6.5B</span> by FY2027 Q3 — the model is not malfunctioning; it is correctly capturing the structural downtrend visible across 13 quarters of actuals. Absent a catalytic product cycle, this trajectory requires a formal reinvest-or-harvest decision at the next strategy review.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Wearables continues following a declining trajectory.<br>
+      &bull; Product innovation remains the primary recovery catalyst.
+    </p>
     </div>
 
     <div style="background:rgba(255,255,255,0.04);border-radius:10px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px;">
     <div style="background:rgba(191,148,255,0.12);border-radius:6px;padding:5px 10px;min-width:110px;text-align:center;flex-shrink:0;">
     <span style="font-size:11px;font-weight:600;color:#BF94FF;letter-spacing:0.08em;text-transform:uppercase;">Inference</span>
     </div>
-    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">Services should anchor long-term growth planning. iPhone and Mac guidance ranges must be explicitly widened to reflect their model uncertainty — presenting narrow-band guidance for these segments risks earnings surprises. Wearables innovation is the one lever that could materially change the portfolio's forecast risk profile if a new product cycle emerges.</p>
+    <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
+      &bull; Services should anchor long-term financial planning.<br>
+      &bull; Broader guidance is warranted for hardware forecasts.
+    </p>
     </div>
 
     </div>
