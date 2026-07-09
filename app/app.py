@@ -120,34 +120,128 @@ if page == "📊 Executive Overview":
 
     st.markdown("""
     <div style="
-    background:rgba(191,148,255,0.12);
-    border-left:4px solid #BF94FF;
-    padding:14px 18px;
-    border-radius:10px;
-    margin:16px 0 22px 0;">
+    background:#1C1C1E;
+    padding:28px 32px;
+    border-radius:16px;
+    border-top:3px solid #BF94FF;
+    margin-top:18px;
+    margin-bottom:24px;
+    box-shadow:0 4px 24px rgba(0,0,0,0.40);;">
+
+    <div style="
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+    padding-bottom:14px;
+    border-bottom:1px solid rgba(255,255,255,0.08);">
 
     <span style="
-    color:#BF94FF;
     font-size:11px;
     font-weight:600;
-    letter-spacing:0.08em;
-    text-transform:uppercase;">
-    KEY FINDING
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:#BF94FF;">
+    Key Findings
     </span>
 
-    <p style="
-    margin:8px 0 0 0;
-    font-size:15px;
-    color:#F5F5F7;
-    line-height:1.6;
-    font-weight:500;">
+    <span style="
+    font-size:11px;
+    color:rgba(255,255,255,0.25);">
+    •
+    </span>
 
-    Services now carries nearly <b>2× Hardware margins</b> and delivered a record
-    <b>$30.0B quarter</b>, reinforcing its role as Apple's durable profit engine.
+    <span style="
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.45);">
+    Board Summary
+    </span>
 
-    </p>
     </div>
-    """, unsafe_allow_html=True)
+
+   <div style="display:grid;gap:14px;">
+
+   <div style="
+   background:rgba(255,255,255,0.04);
+   border-radius:10px;
+   padding:15px 18px;">
+
+   <div style="
+   color:#30D158;
+   font-size:11px;
+   font-weight:600;
+   letter-spacing:0.08em;
+   text-transform:uppercase;
+   margin-bottom:8px;">
+   PROFITABILITY TRANSFORMATION
+   </div>
+
+   <div style="
+   color:#F5F5F7;
+   font-size:14px;
+   line-height:1.7;">
+   &bull; Services delivered <b>$30.0B</b> revenue at nearly <b>2× Hardware margins</b>.<br>
+   &bull; <b>~76% gross margin</b> continues strengthening Apple's earnings quality.
+   </div>
+
+   </div>
+
+   <div style="
+   background:rgba(255,255,255,0.04);
+   border-radius:10px;
+   padding:15px 18px;">
+
+   <div style="
+   color:#FF9F0A;
+   font-size:11px;
+   font-weight:600;
+   letter-spacing:0.08em;
+   text-transform:uppercase;
+   margin-bottom:8px;">
+   REVENUE CONCENTRATION
+   </div>
+
+   <div style="
+   color:#F5F5F7;
+   font-size:14px;
+   line-height:1.7;">
+   &bull; iPhone remained the primary driver of <b>FY2026 Q1</b> growth.<br>
+   &bull; Revenue concentration remains Apple's key portfolio risk.
+   </div>
+
+   </div>
+
+   <div style="
+   background:rgba(255,255,255,0.04);
+   border-radius:10px;
+   padding:15px 18px;">
+
+   <div style="
+   color:#64D2FF;
+   font-size:11px;
+   font-weight:600;
+   letter-spacing:0.08em;
+   text-transform:uppercase;
+   margin-bottom:8px;">
+   STRATEGIC GEOGRAPHIC POSITIONING
+   </div>
+
+   <div style="
+   color:#F5F5F7;
+   font-size:14px;
+   line-height:1.7;">
+   &bull; Americas generated <b>42.6%</b> of Apple's total revenue.<br>
+   &bull; India represents Apple's strongest long-term diversification opportunity.
+   </div>
+
+   </div>
+
+   </div>
+
+   </div>
+   """, unsafe_allow_html=True)
 
     # ==========================
     # KPI CARDS
