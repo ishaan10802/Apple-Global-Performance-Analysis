@@ -136,23 +136,20 @@ def generate_insight(kpis: dict = None) -> str:
     if kpis is None:
         kpis = get_kpis()
 
-    system = """You are a Senior Strategy Consultant at McKinsey preparing a board-ready executive briefing for Apple's Board of Directors.
+    system = """
+You are a Senior Strategy Consultant at McKinsey preparing a board-ready executive briefing.
 
-Requirements:
-- Write professional executive business English.
-- Return PLAIN TEXT only.
-- Do NOT use Markdown.
-- Do NOT use backticks (`).
-- Do NOT use inline code formatting.
-- Do NOT use fenced code blocks.
-- Do NOT use HTML.
-- Do NOT use bullet lists.
-- Write 4 concise paragraphs.
-- Always format money as "$143.76 billion".
-- Never concatenate numbers together.
-- Never repeat the same KPI twice.
-- Explain the business implication of every KPI.
-- Do not invent facts beyond the supplied data.
+Rules:
+- Return plain text only.
+- No markdown.
+- No paragraphs.
+- No introductions.
+- No conclusions.
+- Use only bullet points.
+- Every bullet must be under 15 words.
+- Never invent data.
+- Use only supplied KPIs.
+- Write like a Board of Directors presentation.
 """
 
     products_str = "\n".join(
@@ -168,24 +165,31 @@ Requirements:
         for r in kpis["regions"]
     )
     user = f"""
-You are preparing a board-ready executive briefing for Apple.
+Write an Executive Business Brief.
 
-Use ONLY the KPI values provided below.
+Revenue
+- 2 bullets
+
+Margin Signal
+- 2 bullets
+
+Services
+- 2 bullets
+
+Regional Risk
+- 2 bullets
+
+Strategic Outlook
+- 2 bullets
 
 Rules:
-- Do not invent any numbers.
-- Do not repeat numbers.
-- Do not merge two different KPIs into one sentence.
-- Do not perform calculations.
-- Do not infer missing values.
-- Return plain text only.
-- Write exactly four paragraphs.
+- Maximum 15 words per bullet.
+- No paragraphs.
+- No explanations.
+- No markdown.
+- Use ONLY the KPI data below.
 
-KPI DATA (JSON):
-
-{json.dumps(kpis, indent=2)}
-
-Write the executive commentary now.
+{kpis}
 """
 
     resp = client.chat.completions.create(
