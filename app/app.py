@@ -118,6 +118,37 @@ if page == "📊 Executive Overview":
     latest = exec_df.iloc[-1]
     prior = exec_df.iloc[-2] if len(exec_df) > 1 else latest
 
+    st.markdown("""
+    <div style="
+    background:rgba(191,148,255,0.12);
+    border-left:4px solid #BF94FF;
+    padding:14px 18px;
+    border-radius:10px;
+    margin:16px 0 22px 0;">
+
+    <span style="
+    color:#BF94FF;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;">
+    KEY FINDING
+    </span>
+
+    <p style="
+    margin:8px 0 0 0;
+    font-size:15px;
+    color:#F5F5F7;
+    line-height:1.6;
+    font-weight:500;">
+
+    Services now carries nearly <b>2× Hardware margins</b> and delivered a record
+    <b>$30.0B quarter</b>, reinforcing its role as Apple's durable profit engine.
+
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
+
     # ==========================
     # KPI CARDS
     # ==========================
