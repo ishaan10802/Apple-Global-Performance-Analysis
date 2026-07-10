@@ -110,243 +110,363 @@ def kpi_card(label, value, delta=None, delta_suffix=''):
 if page == "Project Vision":
 
     st.title("Apple Global Performance Analysis")
-    st.caption("Enterprise Financial Intelligence Platform")
+    st.caption("Enterprise Financial Intelligence Platform  ·  FY2022 Q1 – FY2026 Q1")
 
     st.markdown("---")
 
     # ==========================================================
-    # HERO
+    # DESIGN SYSTEM — SCOPED TO THIS PAGE
     # ==========================================================
-
-    st.success("""
-### Executive Overview
-
-Transforming **17 quarters of Apple's official SEC financial disclosures**
-into AI-powered financial intelligence for executive decision-making.
-""")
-
-    st.markdown("")
-
-    # ==========================================================
-    # EXECUTIVE OVERVIEW
-    # ==========================================================
-
-    st.header("Executive Overview")
 
     st.markdown("""
 <style>
 
-.exec-card{
+.pv-card{
     background:#1C1C1E;
-    padding:24px;
+    padding:26px 24px;
     border-radius:14px;
-    border-top:4px solid #0A84FF;
+    border-top:3px solid #0A84FF;
     margin-bottom:20px;
     box-shadow:0px 5px 20px rgba(0,0,0,0.25);
-    min-height:310px;
+    min-height:300px;
+}
+.pv-card.accent-amber{ border-top-color:#FF9F0A; }
+.pv-card.accent-cyan{ border-top-color:#64D2FF; }
+.pv-card.accent-blue{ border-top-color:#0A84FF; }
+.pv-card.accent-green{ border-top-color:#30D158; }
+
+.pv-eyebrow{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+.pv-card.accent-amber .pv-eyebrow{ color:#FF9F0A; }
+.pv-card.accent-cyan .pv-eyebrow{ color:#64D2FF; }
+.pv-card.accent-blue .pv-eyebrow{ color:#0A84FF; }
+.pv-card.accent-green .pv-eyebrow{ color:#30D158; }
+
+.pv-headline{
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight:650;
+    line-height:1.4;
+    margin-bottom:16px;
 }
 
-.exec-card h3{
-    color:white;
-    margin-bottom:18px;
-}
-
-.exec-card ul{
+.pv-list{ list-style:none; padding-left:0; margin:0; }
+.pv-list li{
     color:#D1D1D6;
-    line-height:1.8;
-    padding-left:18px;
+    font-size:13.5px;
+    line-height:1.65;
+    padding-left:17px;
+    position:relative;
+    margin-bottom:9px;
 }
+.pv-card.accent-amber .pv-list li::before{ content:'—'; color:#FF9F0A; position:absolute; left:0; }
+.pv-card.accent-cyan .pv-list li::before{ content:'—'; color:#64D2FF; position:absolute; left:0; }
+.pv-card.accent-blue .pv-list li::before{ content:'—'; color:#0A84FF; position:absolute; left:0; }
+.pv-card.accent-green .pv-list li::before{ content:'—'; color:#30D158; position:absolute; left:0; }
+
+.pv-governing{
+    background:#1C1C1E;
+    border-left:4px solid #BF94FF;
+    border-radius:10px;
+    padding:22px 26px;
+    margin-bottom:8px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.25);
+}
+.pv-governing .pv-eyebrow{ color:#BF94FF; margin-bottom:10px; }
+.pv-governing p{ color:#F2F2F7; font-size:15.5px; line-height:1.7; margin:0; }
+
+.pv-flow-row{
+    display:flex;
+    align-items:stretch;
+    gap:0px;
+    overflow-x:auto;
+    padding-bottom:4px;
+}
+.pv-flow-stage{
+    background:#1C1C1E;
+    border-top:3px solid #0A84FF;
+    border-radius:10px;
+    padding:18px 12px;
+    flex:1;
+    min-width:118px;
+    text-align:center;
+}
+.pv-flow-index{ color:#0A84FF; font-size:11px; font-weight:700; letter-spacing:1px; }
+.pv-flow-title{
+    color:#FFFFFF;
+    font-size:12.5px;
+    font-weight:650;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    margin:8px 0 4px 0;
+}
+.pv-flow-sub{ color:#98989D; font-size:11px; }
+.pv-flow-arrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#48484A;
+    font-size:16px;
+    padding:0 4px;
+    min-width:22px;
+}
+
+.pv-cluster-label{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:#98989D;
+    margin-bottom:12px;
+}
+
+.pv-badge-group{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:8px; }
+.pv-badge{
+    background:#2C2C2E;
+    border:1px solid #3A3A3C;
+    border-radius:8px;
+    padding:9px 14px;
+    font-size:12.5px;
+    color:#E5E5EA;
+}
+.pv-badge::before{ content:'✓'; color:#30D158; font-weight:700; margin-right:6px; }
+
+.pv-metric{
+    background:#1C1C1E;
+    border-top:3px solid #0A84FF;
+    border-radius:10px;
+    padding:16px 16px 18px 16px;
+    margin-bottom:14px;
+}
+.pv-metric.accent-green{ border-top-color:#30D158; }
+.pv-metric-label{
+    font-size:10.5px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#98989D;
+    margin-bottom:8px;
+}
+.pv-metric-value{ font-size:25px; font-weight:700; color:#FFFFFF; margin-bottom:4px; }
+.pv-metric-sub{ font-size:11px; color:#98989D; }
+
+.pv-source{ font-size:11px; color:#6E6E73; font-style:italic; margin-top:6px; }
 
 </style>
 """, unsafe_allow_html=True)
 
-    cards = [
+    # ==========================================================
+    # GOVERNING INSIGHT (PYRAMID PRINCIPLE — ANSWER FIRST)
+    # ==========================================================
 
-        {
-            "title":"🎯 Vision",
-            "items":[
-                "Transform Apple SEC filings into enterprise financial intelligence.",
-                "Centralize executive financial reporting.",
-                "Deliver governed enterprise analytics.",
-                "Automate KPI reporting with AI.",
-                "Enable evidence-based strategic planning."
-            ]
-        },
-
-        {
-            "title":"📊 Business Challenge",
-            "items":[
-                "Financial reporting remains fragmented.",
-                "Manual KPI preparation consumes analyst time.",
-                "Static reports delay executive decisions.",
-                "Historical analysis requires repetitive effort.",
-                "Leadership needs faster financial visibility."
-            ]
-        },
-
-        {
-            "title":"🚀 Product Solution",
-            "items":[
-                "Centralized enterprise financial platform.",
-                "Automated KPI calculations.",
-                "Interactive executive dashboards.",
-                "Predictive revenue forecasting.",
-                "AI-generated executive narratives."
-            ]
-        },
-
-        {
-            "title":"💡 Value Proposition",
-            "items":[
-                "Accelerates executive reporting.",
-                "Improves enterprise governance.",
-                "Supports strategic planning.",
-                "Enhances financial visibility.",
-                "Creates one trusted financial intelligence platform."
-            ]
-        }
-
-    ]
-
-    left,right = st.columns(2)
-
-    for i,card in enumerate(cards):
-
-        html = f"""
-<div class="exec-card">
-
-<h3>{card['title']}</h3>
-
-<ul>
-
-{''.join(f'<li>{item}</li>' for item in card['items'])}
-
-</ul>
-
+    st.markdown("""
+<div class="pv-governing">
+<div class="pv-eyebrow">Executive Summary</div>
+<p>Apple Global Performance Analysis converts 17 quarters of SEC-reported financial data
+(FY2022 Q1 – FY2026 Q1) into a governed, AI-augmented intelligence platform — replacing static,
+backward-looking reporting with real-time, decision-ready analysis across revenue, margin,
+regional, and Services performance.</p>
 </div>
-"""
-
-        with (left if i%2==0 else right):
-            st.markdown(html,unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    # ==========================================================
-    # EXECUTIVE WORKFLOW
-    # ==========================================================
-
-    st.header("Enterprise Analytics Workflow")
-
-    workflow1, workflow2, workflow3, workflow4, workflow5 = st.columns(5)
-
-    with workflow1:
-        st.info("📑\n\nSEC Filings")
-
-    with workflow2:
-        st.info("🗄️\n\nData Warehouse")
-
-    with workflow3:
-        st.info("📈\n\nFinancial Analytics")
-
-    with workflow4:
-        st.info("🤖\n\nAI Insights")
-
-    with workflow5:
-        st.info("👔\n\nExecutive Decisions")
-
-    st.markdown("---")
-
-    # ==========================================================
-    # BUSINESS CAPABILITIES
-    # ==========================================================
-
-    st.header("Core Business Capabilities")
-
-    cap1,cap2 = st.columns(2)
-
-    with cap1:
-
-        st.checkbox("Executive KPI Dashboard",value=True,disabled=True)
-        st.checkbox("Revenue & Margin Intelligence",value=True,disabled=True)
-        st.checkbox("Regional Performance Analytics",value=True,disabled=True)
-        st.checkbox("Product Portfolio Analytics",value=True,disabled=True)
-
-    with cap2:
-
-        st.checkbox("AI Executive Reporting",value=True,disabled=True)
-        st.checkbox("Predictive Revenue Forecasting",value=True,disabled=True)
-        st.checkbox("Services Business Intelligence",value=True,disabled=True)
-        st.checkbox("Strategic Planning Support",value=True,disabled=True)
-
-    st.markdown("---")
-
-    # ==========================================================
-    # BUSINESS IMPACT
-    # ==========================================================
-
-    st.header("Business Impact")
-
-    k1,k2,k3 = st.columns(3)
-
-    with k1:
-        st.metric("Enterprise KPIs","100+")
-        st.caption("Executive Performance Indicators")
-
-    with k2:
-        st.metric("Reporting Period","17 Quarters")
-        st.caption("FY2022 Q1 – FY2026 Q1")
-
-    with k3:
-        st.metric("Forecast Accuracy","MAPE 3.6%")
-        st.caption("Validated Prophet Model")
+""", unsafe_allow_html=True)
 
     st.markdown("")
 
-    st.success("""
-### Executive Value Delivered
+    # ==========================================================
+    # FROM CHALLENGE TO IMPACT (SITUATION – COMPLICATION – RESOLUTION)
+    # ==========================================================
 
-• Centralized enterprise financial intelligence
+    st.header("From Challenge to Impact")
 
-• Automated executive reporting
+    narrative_cards = [
+        {
+            "eyebrow": "01 — The Challenge",
+            "accent": "amber",
+            "headline": "Executive reporting is fragmented, manual, and backward-looking",
+            "items": [
+                "SEC disclosures arrive as dense, unstructured filings, disconnected from day-to-day decisions",
+                "KPI preparation depends on manual reconciliation across disconnected spreadsheets",
+                "Reporting describes the prior quarter; it does not anticipate the next one",
+                "No single, governed view exists across products, geographies, and business segments",
+            ],
+        },
+        {
+            "eyebrow": "02 — The Vision",
+            "accent": "cyan",
+            "headline": "One governed platform, from raw filings to executive-ready insight",
+            "items": [
+                "Convert public SEC disclosures into a structured, queryable financial data model",
+                "Replace static reporting with a live, interactive intelligence layer",
+                "Pair quantitative rigor with AI-generated narrative for faster interpretation",
+                "Give every stakeholder the same governed source of truth",
+            ],
+        },
+        {
+            "eyebrow": "03 — The Solution",
+            "accent": "blue",
+            "headline": "A PostgreSQL-backed platform with automated KPIs and AI-generated narrative",
+            "items": [
+                "Centralized PostgreSQL warehouse with governed views for revenue, margin, regional, and Services performance",
+                "Automated calculation of 100+ metrics in place of manual spreadsheet work",
+                "Interactive dashboards spanning revenue, margin, retention, and forecasting",
+                "AI-generated executive narrative that translates metrics into decision-ready language",
+            ],
+        },
+        {
+            "eyebrow": "04 — The Impact",
+            "accent": "green",
+            "headline": "A single trusted source for faster, better-informed decisions",
+            "items": [
+                "Replaces manual compilation with real-time, query-based reporting",
+                "Surfaces regional concentration, margin compression, and retention risk before they compound",
+                "Standardizes KPI definitions across the organization",
+                "Extends historical reporting into forward-looking, model-based forecasting",
+            ],
+        },
+    ]
 
-• Interactive financial dashboards
+    col_a, col_b = st.columns(2)
 
-• AI-powered business insights
-
-• Revenue forecasting and planning
-
-• Governed enterprise analytics
-""")
+    for i, card in enumerate(narrative_cards):
+        items_html = "".join(f"<li>{item}</li>" for item in card["items"])
+        card_html = f"""
+<div class="pv-card accent-{card['accent']}">
+<div class="pv-eyebrow">{card['eyebrow']}</div>
+<div class="pv-headline">{card['headline']}</div>
+<ul class="pv-list">{items_html}</ul>
+</div>
+"""
+        with (col_a if i % 2 == 0 else col_b):
+            st.markdown(card_html, unsafe_allow_html=True)
 
     st.markdown("---")
 
     # ==========================================================
-    # ENTERPRISE SCALE
+    # HOW THE PLATFORM WORKS
     # ==========================================================
 
-    st.header("Enterprise Scale")
+    st.header("How the Platform Works")
 
-    s1,s2,s3,s4 = st.columns(4)
+    stages = [
+        {"index": "01", "title": "SEC Filings", "sub": "10-K / 10-Q disclosures"},
+        {"index": "02", "title": "Data Warehouse", "sub": "PostgreSQL, governed schema"},
+        {"index": "03", "title": "Financial Analytics", "sub": "KPI, margin, cohort, RFM"},
+        {"index": "04", "title": "AI Insights", "sub": "GPT-4o narrative generation"},
+        {"index": "05", "title": "Executive Decisions", "sub": "Decision-ready intelligence"},
+    ]
 
-    with s1:
-        st.metric("Revenue Analysed","$391B+")
+    stage_parts = []
+    for i, stage in enumerate(stages):
+        stage_parts.append(
+            f'<div class="pv-flow-stage">'
+            f'<div class="pv-flow-index">{stage["index"]}</div>'
+            f'<div class="pv-flow-title">{stage["title"]}</div>'
+            f'<div class="pv-flow-sub">{stage["sub"]}</div>'
+            f'</div>'
+        )
+        if i < len(stages) - 1:
+            stage_parts.append('<div class="pv-flow-arrow">→</div>')
 
-    with s2:
-        st.metric("Services Revenue","$30.0B")
-
-    with s3:
-        st.metric("Services Margin","76%")
-
-    with s4:
-        st.metric("Americas Revenue Mix","42.6%")
+    st.markdown(f'<div class="pv-flow-row">{"".join(stage_parts)}</div>', unsafe_allow_html=True)
 
     st.markdown("---")
 
-    st.info("""
-### Executive Summary
+    # ==========================================================
+    # PLATFORM CAPABILITIES
+    # ==========================================================
 
-Apple Global Performance Analysis transforms official SEC financial disclosures into a centralized enterprise financial intelligence platform combining data engineering, financial analytics, business intelligence, forecasting, and generative AI to accelerate executive decision-making.
-""")
+    st.header("Platform Capabilities")
+
+    capability_clusters = [
+        {
+            "label": "Core Analytics",
+            "items": [
+                "Executive KPI Dashboard",
+                "Revenue & Margin Intelligence",
+                "Regional Performance Analytics",
+                "Product Portfolio Analytics",
+            ],
+        },
+        {
+            "label": "AI & Strategic Intelligence",
+            "items": [
+                "AI Executive Reporting",
+                "Predictive Revenue Forecasting",
+                "Services Business Intelligence",
+                "Strategic Planning Support",
+            ],
+        },
+    ]
+
+    cap_col1, cap_col2 = st.columns(2)
+
+    for i, cluster in enumerate(capability_clusters):
+        badges_html = "".join(f'<div class="pv-badge">{item}</div>' for item in cluster["items"])
+        cluster_html = f"""
+<div class="pv-cluster-label">{cluster['label']}</div>
+<div class="pv-badge-group">{badges_html}</div>
+"""
+        with (cap_col1 if i == 0 else cap_col2):
+            st.markdown(cluster_html, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ==========================================================
+    # IMPACT & SCALE
+    # ==========================================================
+
+    st.header("Impact & Scale")
+
+    st.markdown('<div class="pv-cluster-label">Platform Scope</div>', unsafe_allow_html=True)
+
+    platform_metrics = [
+        {"label": "Enterprise KPIs", "value": "100+", "sub": "Across revenue, margin, regional & services views"},
+        {"label": "Reporting Period", "value": "17 Quarters", "sub": "FY2022 Q1 – FY2026 Q1"},
+        {"label": "Forecast Accuracy", "value": "MAPE 3.6%", "sub": "Prophet model, backtested"},
+    ]
+
+    m1, m2, m3 = st.columns(3)
+    for col, metric in zip((m1, m2, m3), platform_metrics):
+        with col:
+            st.markdown(
+                f'<div class="pv-metric">'
+                f'<div class="pv-metric-label">{metric["label"]}</div>'
+                f'<div class="pv-metric-value">{metric["value"]}</div>'
+                f'<div class="pv-metric-sub">{metric["sub"]}</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+    st.markdown("")
+    st.markdown('<div class="pv-cluster-label">Business Scale Analyzed</div>', unsafe_allow_html=True)
+
+    scale_metrics = [
+        {"label": "Revenue Analyzed", "value": "$391B+"},
+        {"label": "Services Revenue", "value": "$30.0B"},
+        {"label": "Services Margin", "value": "76%"},
+        {"label": "Americas Revenue Mix", "value": "42.6%"},
+    ]
+
+    s1, s2, s3, s4 = st.columns(4)
+    for col, metric in zip((s1, s2, s3, s4), scale_metrics):
+        with col:
+            st.markdown(
+                f'<div class="pv-metric accent-green">'
+                f'<div class="pv-metric-label">{metric["label"]}</div>'
+                f'<div class="pv-metric-value">{metric["value"]}</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+    st.markdown(
+        '<div class="pv-source">Source: Apple Inc. Form 10-K / 10-Q filings, FY2022 Q1 – FY2026 Q1. '
+        'Forecast accuracy validated via backtesting (Prophet time-series model).</div>',
+        unsafe_allow_html=True,
+     )
 # ════════════════════════════════════════════════════════════════════
 # PAGE 2 — EXECUTIVE OVERVIEW
 # ════════════════════════════════════════════════════════════════════
