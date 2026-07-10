@@ -539,7 +539,7 @@ if page == "Project Vision":
     # PLATFORM SCALE & IMPACT
     # ==========================================================
     
-    st.markdown("---")
+    
     st.header("Platform Scale & Impact")
 
     st.markdown(
