@@ -267,10 +267,17 @@ if page == "Project Vision":
     st.markdown("""
 <div class="pv-governing">
 <div class="pv-eyebrow">Executive Summary</div>
-<p>Apple Global Performance Analysis converts 17 quarters of SEC-reported financial data
-(FY2022 Q1 – FY2026 Q1) into a governed, AI-augmented intelligence platform — replacing static,
-backward-looking reporting with real-time, decision-ready analysis across revenue, margin,
-regional, and Services performance.</p>
+<p>• Converts 17 quarters of Apple SEC financial disclosures into a governed enterprise financial intelligence platform.
+
+• Automates financial reporting by replacing manual spreadsheet workflows with SQL-driven analytics pipelines.
+
+• Establishes a centralized PostgreSQL warehouse as a governed single source of truth for executive reporting.
+
+• Delivers 100+ automated financial KPIs covering revenue, profitability, regional performance, product portfolio, and Services growth.
+
+• Combines advanced analytics with AI-generated executive narratives to transform complex financial data into decision-ready insights.
+
+• Demonstrates how a Data Analyst can integrate SQL, Python, Streamlit, forecasting, and Generative AI into an enterprise analytics solution.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -288,10 +295,10 @@ regional, and Services performance.</p>
             "accent": "amber",
             "headline": "Executive reporting is fragmented, manual, and backward-looking",
             "items": [
-                "SEC disclosures arrive as dense, unstructured filings, disconnected from day-to-day decisions",
-                "KPI preparation depends on manual reconciliation across disconnected spreadsheets",
-                "Reporting describes the prior quarter; it does not anticipate the next one",
-                "No single, governed view exists across products, geographies, and business segments",
+                "SEC disclosures provide regulatory compliance but limited decision support.",
+                "KPI preparation requires manual reconciliation across disconnected spreadsheets.",
+                "Historical reporting explains past performance but offers limited forward-looking intelligence.",
+                "No governed analytical layer exists across products, regions, margins and Services."
             ],
         },
         {
@@ -299,32 +306,48 @@ regional, and Services performance.</p>
             "accent": "cyan",
             "headline": "One governed platform, from raw filings to executive-ready insight",
             "items": [
-                "Convert public SEC disclosures into a structured, queryable financial data model",
-                "Replace static reporting with a live, interactive intelligence layer",
-                "Pair quantitative rigor with AI-generated narrative for faster interpretation",
-                "Give every stakeholder the same governed source of truth",
+                    "Convert SEC disclosures into a structured financial warehouse.",
+                    "Establish a governed single source of truth across financial dimensions.",
+                    "Replace static reporting with interactive executive intelligence.",
+                    "Combine quantitative analytics with AI-generated business narratives."
+            ],
+        },  
+
+        {
+             "eyebrow": "03 — The Data Analyst's Contribution",
+             "accent": "lilac",
+             "headline": "Transforming financial data into executive decision intelligence",
+             "items": [
+                      "Designed a governed PostgreSQL warehouse from Apple SEC financial disclosures.",
+                      "Automated 100+ financial KPIs using SQL, Python, and analytical models.",
+                      "Built reusable analytics pipelines for revenue, regional, margin, and Services analysis.",
+                      "Developed executive dashboards translating complex financial data into actionable business insights.",
+                      "Integrated AI-generated executive summaries for faster executive interpretation and decision-making."
             ],
         },
+
         {
-            "eyebrow": "03 — The Solution",
+            "eyebrow": "04 — The Solution",
             "accent": "blue",
             "headline": "A PostgreSQL-backed platform with automated KPIs and AI-generated narrative",
             "items": [
-                "Centralized PostgreSQL warehouse with governed views for revenue, margin, regional, and Services performance",
-                "Automated calculation of 100+ metrics in place of manual spreadsheet work",
-                "Interactive dashboards spanning revenue, margin, retention, and forecasting",
-                "AI-generated executive narrative that translates metrics into decision-ready language",
+                "PostgreSQL warehouse with governed analytical views.",
+                "Automated KPI generation replacing spreadsheet calculations.",
+                "Interactive Streamlit dashboards for executive reporting.",
+                "Prophet forecasting for forward-looking revenue analysis.",
+                "AI-generated executive narratives."
             ],
         },
         {
-            "eyebrow": "04 — The Impact",
+            "eyebrow": "05 — The Impact",
             "accent": "green",
             "headline": "A single trusted source for faster, better-informed decisions",
             "items": [
-                "Replaces manual compilation with real-time, query-based reporting",
-                "Surfaces regional concentration, margin compression, and retention risk before they compound",
-                "Standardizes KPI definitions across the organization",
-                "Extends historical reporting into forward-looking, model-based forecasting",
+                "Reduced manual reporting through automated SQL pipelines.",
+                "Standardized KPI definitions across products and regions.",
+                "Identified revenue concentration, margin trends and strategic business risks.",
+                "Enabled interactive financial exploration instead of static reporting.",
+                "Combined analytics with AI-generated executive communication."
             ],
         },
     ]
@@ -349,13 +372,13 @@ regional, and Services performance.</p>
     # HOW THE PLATFORM WORKS
     # ==========================================================
 
-    st.header("How the Platform Works")
+    st.header("Enterprise Analytics Workflow")
 
     stages = [
         {"index": "01", "title": "SEC Filings", "sub": "10-K / 10-Q disclosures"},
         {"index": "02", "title": "Data Warehouse", "sub": "PostgreSQL, governed schema"},
         {"index": "03", "title": "Financial Analytics", "sub": "KPI, margin, cohort, RFM"},
-        {"index": "04", "title": "AI Insights", "sub": "GPT-4o narrative generation"},
+        {"index": "04", "title": "Analytics Assistant", "sub": "GPT-4o narrative generation"},
         {"index": "05", "title": "Executive Decisions", "sub": "Decision-ready intelligence"},
     ]
 
@@ -385,18 +408,17 @@ regional, and Services performance.</p>
         {
             "label": "Core Analytics",
             "items": [
-                "Executive KPI Dashboard",
-                "Revenue & Margin Intelligence",
-                "Regional Performance Analytics",
-                "Product Portfolio Analytics",
+                "Revenue Intelligence",
+                "Margin Analytics",
+                "Regional Performance",
+                "Product Portfolio Analysis",
             ],
         },
         {
-            "label": "AI & Strategic Intelligence",
+            "label": "Strategic Intelligence",
             "items": [
-                "AI Executive Reporting",
                 "Predictive Revenue Forecasting",
-                "Services Business Intelligence",
+                "Trend Analysis",
                 "Strategic Planning Support",
             ],
         },
@@ -414,59 +436,229 @@ regional, and Services performance.</p>
             st.markdown(cluster_html, unsafe_allow_html=True)
 
     st.markdown("---")
+    #------------------------------------------
+       #BUSINESS VALUE DELIVERED
+    #------------------------------------------
+
+    st.markdown("---")
+
+    st.header("Business Value Delivered")
+
+    business_value = [
+    {
+        "label": "KPI Automation",
+        "value": "100+",
+        "sub": "Enterprise Financial Metrics"
+    },
+    {
+        "label": "Historical Coverage",
+        "value": "17",
+        "sub": "SEC Reporting Quarters"
+    },
+    {
+        "label": "Data Architecture",
+        "value": "1",
+        "sub": "Governed Analytics Repository"
+    },
+    {
+        "label": "Executive Reporting",
+        "value": "Auto",
+        "sub": "Strategic Performance Briefs"
+    },
+]
+    
+    bv1, bv2, bv3, bv4 = st.columns(4)
+
+    for col, metric in zip((bv1, bv2, bv3, bv4), business_value):
+      with col:
+        st.markdown(
+            f"""
+<div class="pv-metric accent-green">
+    <div class="pv-metric-label">{metric['label']}</div>
+    <div class="pv-metric-value">{metric['value']}</div>
+    <div class="pv-metric-sub">{metric['sub']}</div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )   
+
+
+        st.markdown(
+    """
+<div class="pv-governing">
+    <div class="pv-eyebrow">Why This Matters</div>
+
+    <p>
+    Modern enterprises require more than financial reporting—they require financial intelligence.
+    Apple Global Performance Analysis transforms regulatory disclosures into a governed enterprise
+    analytics platform that standardizes financial measurement, reveals the strategic drivers of
+    business performance, and delivers decision-ready intelligence. By integrating data engineering,
+    advanced analytics, and executive reporting into a single platform, it enables leadership to
+    move from retrospective reporting to proactive, data-driven decision-making.
+    </p>
+
+</div>
+""",
+    unsafe_allow_html=True,
+)     
+   
 
     # ==========================================================
-    # IMPACT & SCALE
+    # PLATFORM SCALE & IMPACT
     # ==========================================================
+    
+    st.markdown("---")
+    st.header("Platform Scale & Impact")
 
-    st.header("Impact & Scale")
-
-    st.markdown('<div class="pv-cluster-label">Platform Scope</div>', unsafe_allow_html=True)
+    st.markdown(
+     '<div class="pv-cluster-label">Enterprise Analytics Platform</div>',
+     unsafe_allow_html=True,
+    )
 
     platform_metrics = [
-        {"label": "Enterprise KPIs", "value": "100+", "sub": "Across revenue, margin, regional & services views"},
-        {"label": "Reporting Period", "value": "17 Quarters", "sub": "FY2022 Q1 – FY2026 Q1"},
-        {"label": "Forecast Accuracy", "value": "MAPE 3.6%", "sub": "Prophet model, backtested"},
+     {
+        "label": "Financial Data",
+        "value": "17",
+        "sub": "SEC Reporting Quarters"
+     },
+     {
+        "label": "Enterprise KPIs",
+        "value": "100+",
+        "sub": "Automated Financial Metrics"
+     },
+     {
+        "label": "Business Dimensions",
+        "value": "10+",
+        "sub": "Revenue, Margin, Regions & Services"
+     },
     ]
 
     m1, m2, m3 = st.columns(3)
+
     for col, metric in zip((m1, m2, m3), platform_metrics):
-        with col:
-            st.markdown(
-                f'<div class="pv-metric">'
-                f'<div class="pv-metric-label">{metric["label"]}</div>'
-                f'<div class="pv-metric-value">{metric["value"]}</div>'
-                f'<div class="pv-metric-sub">{metric["sub"]}</div>'
-                f'</div>',
-                unsafe_allow_html=True,
-            )
+     with col:
+        st.markdown(
+            f"""
+<div class="pv-metric">
+    <div class="pv-metric-label">{metric['label']}</div>
+    <div class="pv-metric-value">{metric['value']}</div>
+    <div class="pv-metric-sub">{metric['sub']}</div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
 
     st.markdown("")
-    st.markdown('<div class="pv-cluster-label">Business Scale Analyzed</div>', unsafe_allow_html=True)
-
-    scale_metrics = [
-        {"label": "Revenue Analyzed", "value": "$391B+"},
-        {"label": "Services Revenue", "value": "$30.0B"},
-        {"label": "Services Margin", "value": "76%"},
-        {"label": "Americas Revenue Mix", "value": "42.6%"},
-    ]
-
-    s1, s2, s3, s4 = st.columns(4)
-    for col, metric in zip((s1, s2, s3, s4), scale_metrics):
-        with col:
-            st.markdown(
-                f'<div class="pv-metric accent-green">'
-                f'<div class="pv-metric-label">{metric["label"]}</div>'
-                f'<div class="pv-metric-value">{metric["value"]}</div>'
-                f'</div>',
-                unsafe_allow_html=True,
-            )
 
     st.markdown(
-        '<div class="pv-source">Source: Apple Inc. Form 10-K / 10-Q filings, FY2022 Q1 – FY2026 Q1. '
-        'Forecast accuracy validated via backtesting (Prophet time-series model).</div>',
+    '<div class="pv-cluster-label">Business Scale Analysed</div>',
+    unsafe_allow_html=True,
+    )
+
+    business_metrics = [
+     {
+        "label": "Revenue Analysed",
+        "value": "$391B+"
+     },
+     {
+        "label": "Product Categories",
+        "value": "5"
+     },
+     {
+        "label": "Geographical Regions",
+        "value": "5"
+     },
+     {
+        "label": "Forecast Model",
+        "value": "Prophet"
+     },
+  ]
+
+    b1, b2, b3, b4 = st.columns(4)
+
+    for col, metric in zip((b1, b2, b3, b4), business_metrics):
+     with col:
+        st.markdown(
+            f"""
+<div class="pv-metric accent-green">
+    <div class="pv-metric-label">{metric['label']}</div>
+    <div class="pv-metric-value">{metric['value']}</div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
+
+    # ==========================================================
+    # DATA GOVERNANCE & VALIDATION
+    # ==========================================================
+
+    st.markdown("---")
+
+    st.header("Data Governance & Validation")
+
+    gov_col1, gov_col2 = st.columns(2)
+
+    with gov_col1:
+
+     st.markdown(
+        """
+<div class="pv-governing">
+
+<div class="pv-eyebrow">Primary Data Source</div>
+
+<p>
+
+<b>Source</b><br>
+Apple Inc. Form 10-K & Form 10-Q SEC filings
+
+<br><br>
+
+<b>Reporting Period</b><br>
+FY2022 Q1 – FY2026 Q1
+
+<br><br>
+
+<b>Coverage</b><br>
+Products, Services, Regional Revenue, Gross Margin and Financial Performance
+
+</p>
+
+</div>
+""",
         unsafe_allow_html=True,
-     )
+    )
+
+    with gov_col2:
+
+      st.markdown(
+        """
+<div class="pv-governing">
+
+<div class="pv-eyebrow">Data Quality & Validation</div>
+
+<p>
+
+<b>Data Engineering</b><br>
+Governed PostgreSQL warehouse with standardized enterprise KPI definitions
+
+<br><br>
+
+<b>Validation</b><br>
+Financial metrics reconciled against Apple's official SEC disclosures
+
+<br><br>
+
+<b>Forecasting</b><br>
+Revenue projections validated using historical back-testing with Prophet
+
+</p>
+
+</div>
+""",
+        unsafe_allow_html=True,
+    )
+   
+  
 # ════════════════════════════════════════════════════════════════════
 # PAGE 2 — EXECUTIVE OVERVIEW
 # ════════════════════════════════════════════════════════════════════
