@@ -66,6 +66,7 @@ with st.sidebar:
     st.markdown("*Business Analytics Platform*")
     st.markdown("---")
     page = st.radio("Agenda", [
+        " Product Vision",
         "📊 Executive Overview",
         "📦 Product Analysis",
         "🌍 Global Performance",
@@ -103,12 +104,176 @@ def kpi_card(label, value, delta=None, delta_suffix=''):
             {d_text}
         </div>
     """, unsafe_allow_html=True)
+#------------------------------    
+# PAGE 1 - PROJECT VISION
+#------------------------------
+if page == "Product Vision":
 
+    st.title("Product Vision")
+    st.caption("Apple Global Performance Analysis • Enterprise Financial Intelligence Platform")
+
+    st.markdown("---")
+
+    st.header("Product Goal")
+
+    st.markdown("""
+Apple Global Performance Analysis is an enterprise financial intelligence platform developed to transform **seventeen quarters of Apple's official SEC financial disclosures (FY2022–FY2026 Q1)** into a centralized executive decision-support system.
+
+Traditional quarterly filings satisfy regulatory reporting requirements but require significant manual effort to identify financial trends, monitor profitability, compare regional performance, evaluate product portfolios, and prepare executive reports.
+
+This platform addresses those challenges by integrating **PostgreSQL, SQL, Python, Streamlit, Plotly, Prophet Forecasting, and OpenAI** into a governed analytical environment that automates financial analytics, forecasting, visualization, and AI-assisted executive reporting.
+
+Designed as an end-to-end business intelligence solution, the platform enables leadership teams to monitor enterprise performance, identify growth opportunities, evaluate strategic risks, and support evidence-based decision-making through a single source of financial truth.
+""")
+
+    st.markdown("---")
+
+    st.header("Business Challenge")
+
+    st.info("""
+Enterprise financial reporting is often fragmented across spreadsheets, static reports, and multiple analytical tools.
+
+As reporting periods grow, finance teams spend considerable time consolidating historical data, validating KPIs, producing executive dashboards, and generating business insights instead of focusing on strategic decision-making.
+""")
+
+    st.markdown("---")
+
+    st.header("Product Solution")
+
+    st.success("""
+Apple Global Performance Analysis consolidates financial data engineering, business intelligence, predictive analytics, and generative AI into a unified enterprise platform capable of transforming official SEC filings into executive-ready financial intelligence within seconds.
+""")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""
+### Business Capabilities
+
+- Executive KPI Dashboard
+- Financial Performance Analytics
+- Regional Intelligence
+- Product Performance Analysis
+- Services Business Analysis
+- Profitability Monitoring
+- Revenue Trend Analysis
+- Executive Reporting
+- Strategic Planning Support
+""")
+
+    with col2:
+        st.markdown("""
+### Technical Capabilities
+
+- PostgreSQL Data Warehouse
+- SQL Financial Modeling
+- Python Analytics Engine
+- Interactive Streamlit Dashboard
+- Plotly Data Visualization
+- Prophet Forecasting
+- OpenAI Executive Insights
+- Automated KPI Reporting
+- PDF Report Generation
+""")
+
+    st.markdown("---")
+
+    st.header("Business Impact")
+
+    impact1, impact2, impact3 = st.columns(3)
+
+    with impact1:
+        st.metric("Financial KPIs", "100+")
+        st.caption("Enterprise performance indicators")
+
+    with impact2:
+        st.metric("Reporting Period", "17 Quarters")
+        st.caption("FY2022 Q1 – FY2026 Q1")
+
+    with impact3:
+        st.metric("Forecast Accuracy", "MAPE 3.6%")
+        st.caption("Validated forecasting model")
+
+    st.markdown("")
+
+    st.markdown("""
+### Value Delivered
+
+- Centralizes official Apple SEC financial disclosures into a governed analytical platform.
+- Eliminates repetitive manual financial reporting workflows.
+- Accelerates executive reporting through AI-generated financial narratives.
+- Provides interactive dashboards for product, regional, profitability, and forecasting analytics.
+- Supports strategic planning through predictive financial modeling.
+- Delivers a single authoritative source of enterprise financial intelligence.
+""")
+
+    st.markdown("---")
+
+    st.header("Technology Stack")
+
+    tech = pd.DataFrame({
+        "Layer": [
+            "Data Source",
+            "Database",
+            "Data Modeling",
+            "Analytics",
+            "Business Intelligence",
+            "Visualization",
+            "Forecasting",
+            "Artificial Intelligence",
+            "Reporting"
+        ],
+        "Technology": [
+            "Apple SEC Financial Filings",
+            "PostgreSQL",
+            "SQL",
+            "Python",
+            "Streamlit",
+            "Plotly",
+            "Prophet",
+            "OpenAI GPT",
+            "Executive PDF Reports"
+        ]
+    })
+
+    st.dataframe(
+        tech,
+        hide_index=True,
+        use_container_width=True
+    )
+
+    st.markdown("---")
+
+    st.header("Enterprise Scale")
+
+    scale1, scale2, scale3, scale4 = st.columns(4)
+
+    with scale1:
+        st.metric("Revenue Analysed", "$391B+")
+
+    with scale2:
+        st.metric("Services Revenue", "$30.0B")
+
+    with scale3:
+        st.metric("Services Margin", "~76%")
+
+    with scale4:
+        st.metric("Americas Mix", "42.6%")
+
+    st.markdown("---")
+
+    st.header("Product Value Proposition")
+
+    st.markdown("""
+Apple Global Performance Analysis demonstrates how enterprise financial reporting can evolve beyond static regulatory disclosures into an intelligent financial decision-support platform.
+
+By combining **data engineering, SQL analytics, financial modeling, business intelligence, interactive visualization, predictive forecasting, and generative AI**, the platform empowers executives with governed, data-driven insights that improve reporting efficiency, strengthen capital allocation, and support long-term strategic planning.
+""")
 
 # ════════════════════════════════════════════════════════════════════
 # PAGE 1 — EXECUTIVE OVERVIEW
 # ════════════════════════════════════════════════════════════════════
-if page == "📊 Executive Overview":
+elif page == "📊 Executive Overview":
 
     st.title("Executive Overview")
     st.caption("Top-line performance · FY2022–FY2026 Q1")
