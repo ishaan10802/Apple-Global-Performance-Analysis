@@ -166,6 +166,7 @@ if page == "Project Vision":
 }
 .pv-card.accent-amber .pv-list li::before{ content:'—'; color:#FF9F0A; position:absolute; left:0; }
 .pv-card.accent-cyan .pv-list li::before{ content:'—'; color:#64D2FF; position:absolute; left:0; }
+.pv-card.accent-lilac .pv-list li::before{ content:'—'; color:#64D2FF; position:absolute; left:0; }
 .pv-card.accent-blue .pv-list li::before{ content:'—'; color:#0A84FF; position:absolute; left:0; }
 .pv-card.accent-green .pv-list li::before{ content:'—'; color:#30D158; position:absolute; left:0; }
 
@@ -256,8 +257,72 @@ if page == "Project Vision":
 .pv-metric-sub{ font-size:11px; color:#98989D; }
 
 .pv-source{ font-size:11px; color:#6E6E73; font-style:italic; margin-top:6px; }
+.pv-governing{
+    background:#17181d;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:28px;
+    height:100%;
+    transition:.3s;
+}
 
+.pv-governing:hover{
+    transform:translateY(-4px);
+    border-color:#00d26a;
+    box-shadow:0 20px 45px rgba(0,210,106,.12);
+}
+
+.pv-eyebrow{
+    color:#8b7cff;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+
+.pv-governing h3{
+    color:white;
+    font-size:1.35rem;
+    margin-bottom:14px;
+    font-weight:700;
+}
+
+.pv-governing p{
+    color:#cfd3dc;
+    font-size:.96rem;
+    line-height:1.8;
+}
+
+.pv-feature-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:22px;
+}
+
+.pv-feature-row span{
+    background:rgba(0,210,106,.08);
+    color:#3ee98b;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:.82rem;
+    font-weight:600;
+}
+
+.pv-tag{
+    display:inline-block;
+    margin-top:20px;
+    padding:8px 16px;
+    border-radius:30px;
+    background:rgba(0,210,106,.08);
+    color:#34e27a;
+    font-size:.82rem;
+    font-weight:600;
+}
 </style>
+                
+
 """, unsafe_allow_html=True)
 
     # ==========================================================
@@ -266,7 +331,7 @@ if page == "Project Vision":
 
     st.markdown("""
 <div class="pv-governing">
-<div class="pv-eyebrow">Executive Summary</div>
+<div class="pv-eyebrow">Vision</div>
 <p>• Converts 17 quarters of Apple SEC financial disclosures into a governed enterprise financial intelligence platform.
 
 • Automates financial reporting by replacing manual spreadsheet workflows with SQL-driven analytics pipelines.
@@ -287,87 +352,133 @@ if page == "Project Vision":
     # FROM CHALLENGE TO IMPACT (SITUATION – COMPLICATION – RESOLUTION)
     # ==========================================================
 
-    st.header("From Challenge to Impact")
+    # ==========================================================
+    # PRODUCT STORY
+    # ==========================================================
+
+    st.markdown(
+    """
+<h2 style="margin-bottom:0;">
+Business Transformation Journey
+</h2>
+
+<p style="
+font-size:18px;
+color:#BFC6D4;
+margin-bottom:35px;
+">
+How Apple Global Performance Analysis transforms financial reporting into
+enterprise decision intelligence.
+</p>
+""",
+    unsafe_allow_html=True,
+)
 
     narrative_cards = [
-        {
-            "eyebrow": "01 — The Challenge",
-            "accent": "amber",
-            "headline": "Executive reporting is fragmented, manual, and backward-looking",
-            "items": [
-                "SEC disclosures provide regulatory compliance but limited decision support.",
-                "KPI preparation requires manual reconciliation across disconnected spreadsheets.",
-                "Historical reporting explains past performance but offers limited forward-looking intelligence.",
-                "No governed analytical layer exists across products, regions, margins and Services."
-            ],
-        },
-        {
-            "eyebrow": "02 — The Vision",
-            "accent": "cyan",
-            "headline": "One governed platform, from raw filings to executive-ready insight",
-            "items": [
-                    "Convert SEC disclosures into a structured financial warehouse.",
-                    "Establish a governed single source of truth across financial dimensions.",
-                    "Replace static reporting with interactive executive intelligence.",
-                    "Combine quantitative analytics with AI-generated business narratives."
-            ],
-        },  
 
-        {
-             "eyebrow": "03 — The Data Analyst's Contribution",
-             "accent": "lilac",
-             "headline": "Transforming financial data into executive decision intelligence",
-             "items": [
-                      "Designed a governed PostgreSQL warehouse from Apple SEC financial disclosures.",
-                      "Automated 100+ financial KPIs using SQL, Python, and analytical models.",
-                      "Built reusable analytics pipelines for revenue, regional, margin, and Services analysis.",
-                      "Developed executive dashboards translating complex financial data into actionable business insights.",
-                      "Integrated AI-generated executive summaries for faster executive interpretation and decision-making."
-            ],
-        },
+     {
+        "eyebrow": "01 • BUSINESS CHALLENGE",
+        "accent": "amber",
+        "headline": "Financial reporting remained fragmented and retrospective.",
+        "items": [
+            "SEC filings provide compliance but limited executive intelligence.",
+            "Manual KPI preparation increases reporting effort and inconsistency.",
+            "Disconnected financial views delay strategic decision-making.",
+            "Limited visibility across Products, Services, Regions and Margins."
+        ],
+     },
 
-        {
-            "eyebrow": "04 — The Solution",
-            "accent": "blue",
-            "headline": "A PostgreSQL-backed platform with automated KPIs and AI-generated narrative",
-            "items": [
-                "PostgreSQL warehouse with governed analytical views.",
-                "Automated KPI generation replacing spreadsheet calculations.",
-                "Interactive Streamlit dashboards for executive reporting.",
-                "Prophet forecasting for forward-looking revenue analysis.",
-                "AI-generated executive narratives."
-            ],
-        },
-        {
-            "eyebrow": "05 — The Impact",
-            "accent": "green",
-            "headline": "A single trusted source for faster, better-informed decisions",
-            "items": [
-                "Reduced manual reporting through automated SQL pipelines.",
-                "Standardized KPI definitions across products and regions.",
-                "Identified revenue concentration, margin trends and strategic business risks.",
-                "Enabled interactive financial exploration instead of static reporting.",
-                "Combined analytics with AI-generated executive communication."
-            ],
-        },
-    ]
+     {
+        "eyebrow": "02 • PRODUCT VISION",
+        "accent": "cyan",
+        "headline": "Create a governed financial intelligence platform.",
+        "items": [
+            "Transform SEC filings into a centralized analytical warehouse.",
+            "Build a governed single source of financial truth.",
+            "Deliver executive dashboards instead of static reports.",
+            "Integrate AI-generated business narratives with analytics."
+        ],
+     },
 
-    col_a, col_b = st.columns(2)
+     {
+        "eyebrow": "03 • DATA ANALYST CONTRIBUTION",
+        "accent": "lilac",
+        "headline": "Designed and developed the complete analytics platform.",
+        "items": [
+            "Designed PostgreSQL financial warehouse architecture.",
+            "Automated 100+ enterprise KPIs using SQL and Python.",
+            "Developed forecasting, profitability and regional analytics.",
+            "Built interactive executive dashboards in Streamlit.",
+            "Integrated OpenAI-powered executive business summaries."
+        ],
+     },
+
+     {
+        "eyebrow": "04 • PLATFORM CAPABILITIES",
+        "accent": "blue",
+        "headline": "Enterprise-grade analytics with intelligent automation.",
+        "items": [
+            "Governed PostgreSQL analytical data model.",
+            "Automated KPI engine replacing spreadsheet workflows.",
+            "Interactive executive financial dashboards.",
+            "AI-generated executive brief generation.",
+            "Revenue forecasting using Prophet models."
+        ],
+     },
+
+     {
+        "eyebrow": "05 • BUSINESS VALUE",
+        "accent": "green",
+        "headline": "Delivering measurable business intelligence.",
+        "items": [
+            "Reduced manual reporting through SQL automation.",
+            "Standardized enterprise financial KPIs.",
+            "Improved visibility into regional and product performance.",
+            "Accelerated executive reporting workflows.",
+            "Enabled faster, data-driven strategic decisions."
+        ],
+     }
+
+ ]
+
+    col1, col2 = st.columns(2, gap="large")
 
     for i, card in enumerate(narrative_cards):
-        items_html = "".join(f"<li>{item}</li>" for item in card["items"])
-        card_html = f"""
+
+     items = ""
+
+     for item in card["items"]:
+        items += f"""
+        <div class="pv-item">
+            <span class="pv-check">✓</span>
+            <span>{item}</span>
+        </div>
+        """
+
+     html = f"""
 <div class="pv-card accent-{card['accent']}">
-<div class="pv-eyebrow">{card['eyebrow']}</div>
-<div class="pv-headline">{card['headline']}</div>
-<ul class="pv-list">{items_html}</ul>
+
+    <div class="pv-eyebrow">
+        {card['eyebrow']}
+    </div>
+
+    <div class="pv-headline">
+        {card['headline']}
+    </div>
+
+    <div class="pv-items">
+
+        {items}
+
+    </div>
+
 </div>
 """
-        with (col_a if i % 2 == 0 else col_b):
-            st.markdown(card_html, unsafe_allow_html=True)
 
-    st.markdown("---")
+    with (col1 if i % 2 == 0 else col2):
+        st.markdown(html, unsafe_allow_html=True)
 
+    st.markdown("<br>", unsafe_allow_html=True)
     # ==========================================================
     # HOW THE PLATFORM WORKS
     # ==========================================================
@@ -486,21 +597,28 @@ if page == "Project Vision":
         st.markdown(
     """
 <div class="pv-governing">
+
     <div class="pv-eyebrow">Why This Matters</div>
 
+    <h3>Enterprise Financial Intelligence</h3>
+
     <p>
-    Modern enterprises require more than financial reporting—they require financial intelligence.
-    Apple Global Performance Analysis transforms regulatory disclosures into a governed enterprise
-    analytics platform that standardizes financial measurement, reveals the strategic drivers of
-    business performance, and delivers decision-ready intelligence. By integrating data engineering,
-    advanced analytics, and executive reporting into a single platform, it enables leadership to
-    move from retrospective reporting to proactive, data-driven decision-making.
+    Built to replace static financial reports with an integrated intelligence
+    platform that enables executives to monitor performance, identify strategic
+    trends, forecast outcomes, and make faster, data-driven business decisions.
     </p>
+
+    <div class="pv-feature-row">
+        <span>✓ KPI Automation</span>
+        <span>✓ AI Narratives</span>
+        <span>✓ Forecasting</span>
+        <span>✓ Executive Reporting</span>
+    </div>
 
 </div>
 """,
     unsafe_allow_html=True,
-)     
+)
    
 
     # ==========================================================
