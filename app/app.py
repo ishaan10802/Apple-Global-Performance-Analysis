@@ -66,7 +66,7 @@ with st.sidebar:
     st.markdown("*Business Analytics Platform*")
     st.markdown("---")
     page = st.radio("Agenda", [
-            "Product Vision",
+            "Project Vision",
         "📊 Executive Overview",
         "📦 Product Analysis",
         "🌍 Global Performance",
@@ -107,14 +107,14 @@ def kpi_card(label, value, delta=None, delta_suffix=''):
 #------------------------------    
 # PAGE 1 - PROJECT VISION
 #------------------------------
-if page == "Product Vision":
+if page == "Project Vision":
 
-    st.title("Product Vision")
+    st.title("Project Vision")
     st.caption("Apple Global Performance Analysis • Enterprise Financial Intelligence Platform")
 
     st.markdown("---")
 
-    st.header("Product Goal")
+    st.header("Vision Statement")
 
     st.markdown("""
 Apple Global Performance Analysis is an enterprise financial intelligence platform developed to transform **seventeen quarters of Apple's official SEC financial disclosures (FY2022–FY2026 Q1)** into a centralized executive decision-support system.
@@ -144,7 +144,7 @@ As reporting periods grow, finance teams spend considerable time consolidating h
 Apple Global Performance Analysis consolidates financial data engineering, business intelligence, predictive analytics, and generative AI into a unified enterprise platform capable of transforming official SEC filings into executive-ready financial intelligence within seconds.
 """)
 
-    col1, col2 = st.columns(2)
+    col1= st.container()
 
     with col1:
         st.markdown("""
@@ -152,29 +152,15 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
 
 - Executive KPI Dashboard
 - Financial Performance Analytics
-- Regional Intelligence
+- Global Revenue & Margin Monitoring
 - Product Performance Analysis
 - Services Business Analysis
 - Profitability Monitoring
 - Revenue Trend Analysis
-- Executive Reporting
 - Strategic Planning Support
 """)
 
-    with col2:
-        st.markdown("""
-### Technical Capabilities
-
-- PostgreSQL Data Warehouse
-- SQL Financial Modeling
-- Python Analytics Engine
-- Interactive Streamlit Dashboard
-- Plotly Data Visualization
-- Prophet Forecasting
-- OpenAI Executive Insights
-- Automated KPI Reporting
-- PDF Report Generation
-""")
+    
 
     st.markdown("---")
 
@@ -209,38 +195,7 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
 
     st.markdown("---")
 
-    st.header("Technology Stack")
-
-    tech = pd.DataFrame({
-        "Layer": [
-            "Data Source",
-            "Database",
-            "Data Modeling",
-            "Analytics",
-            "Business Intelligence",
-            "Visualization",
-            "Forecasting",
-            "Artificial Intelligence",
-            "Reporting"
-        ],
-        "Technology": [
-            "Apple SEC Financial Filings",
-            "PostgreSQL",
-            "SQL",
-            "Python",
-            "Streamlit",
-            "Plotly",
-            "Prophet",
-            "OpenAI GPT",
-            "Executive PDF Reports"
-        ]
-    })
-
-    st.dataframe(
-        tech,
-        hide_index=True,
-        use_container_width=True
-    )
+    
 
     st.markdown("---")
 
