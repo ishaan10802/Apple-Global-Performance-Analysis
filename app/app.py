@@ -66,7 +66,7 @@ with st.sidebar:
     st.markdown("*Business Analytics Platform*")
     st.markdown("---")
     page = st.radio("Agenda", [
-        " Product Vision",
+            "Product Vision",
         "📊 Executive Overview",
         "📦 Product Analysis",
         "🌍 Global Performance",
