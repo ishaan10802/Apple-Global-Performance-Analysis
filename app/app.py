@@ -377,6 +377,7 @@ if page == "Project Vision":
 """, unsafe_allow_html=True)
 
     st.markdown("")
+    
 
     # ==========================================================
     # FROM CHALLENGE TO IMPACT (SITUATION – COMPLICATION – RESOLUTION)
@@ -385,7 +386,7 @@ if page == "Project Vision":
     # ==========================================================
     # PRODUCT STORY
     # ==========================================================
-
+    st.markdown("---")
     st.header("From Challenge to Impact")
     narrative_cards = [
         {
@@ -432,8 +433,8 @@ if page == "Project Vision":
                 "PostgreSQL warehouse with governed analytical views.",
                 "Automated KPI generation replacing spreadsheet calculations.",
                 "Interactive Streamlit dashboards for executive reporting.",
-                "Prophet forecasting for forward-looking revenue analysis.",
-                "AI-generated executive narratives."
+                "Prophet forecasting for forward-looking revenue analysis."
+                
             ],
         },
         {
@@ -533,113 +534,7 @@ if page == "Project Vision":
             st.markdown(cluster_html, unsafe_allow_html=True)
 
     st.markdown("---")
-    #------------------------------------------
-       #BUSINESS VALUE DELIVERED
-    #------------------------------------------
-
-    st.markdown("---")
-
-    st.header("Business Value Delivered")
-
-    business_value = [
-    {
-        "label": "KPI Automation",
-        "value": "100+",
-        "sub": "Enterprise Financial Metrics"
-    },
-    {
-        "label": "Historical Coverage",
-        "value": "17",
-        "sub": "SEC Reporting Quarters"
-    },
-    {
-        "label": "Data Architecture",
-        "value": "1",
-        "sub": "Governed Analytics Repository"
-    },
-    {
-        "label": "Executive Reporting",
-        "value": "Auto",
-        "sub": "Strategic Performance Briefs"
-    },
-]
     
-    bv1, bv2, bv3, bv4 = st.columns(4)
-
-    for col, metric in zip((bv1, bv2, bv3, bv4), business_value):
-      with col:
-        st.markdown(
-            f"""
-<div class="pv-metric accent-green">
-    <div class="pv-metric-label">{metric['label']}</div>
-    <div class="pv-metric-value">{metric['value']}</div>
-    <div class="pv-metric-sub">{metric['sub']}</div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )   
-
-
-    st.markdown(
-    """
-<div class="pv-governing">
-
-    <div class="pv-eyebrow">Why This Matters</div>
-
-    <h3>Enterprise Financial Intelligence Platform</h3>
-
-    <p>
-    Apple Global Performance Analysis transforms publicly available SEC financial
-    disclosures into a governed enterprise analytics platform. By combining
-    automated KPI computation, AI-powered executive narratives, forecasting,
-    and interactive dashboards, it enables leadership to monitor financial
-    performance, uncover strategic opportunities, and make faster, data-driven
-    business decisions from a single source of truth.
-    </p>
-
-    <div class="pv-feature-row">
-        <span>✓ Automated KPI Engine</span>
-        <span>✓ AI Executive Briefs</span>
-        <span>✓ Revenue Forecasting</span>
-        <span>✓ Interactive Dashboards</span>
-        <span>✓ Financial Data Warehouse</span>
-        <span>✓ Executive Decision Support</span>
-    </div>
-
-</div>
-""",
-    unsafe_allow_html=True,
-)    
-    st.markdown(
-    """
-<div class="pv-metrics">
-
-    <div class="pv-metric">
-        <h2>17</h2>
-        <p>Financial Quarters</p>
-    </div>
-
-    <div class="pv-metric">
-        <h2>100+</h2>
-        <p>Automated KPIs</p>
-    </div>
-
-    <div class="pv-metric">
-        <h2>5</h2>
-        <p>Business Segments</p>
-    </div>
-
-    <div class="pv-metric">
-        <h2>AI</h2>
-        <p>Executive Narratives</p>
-    </div>
-
-</div>
-""",
-    unsafe_allow_html=True,
-)
-   
-
     # ==========================================================
     # PLATFORM SCALE & IMPACT
     # ==========================================================
