@@ -117,13 +117,12 @@ if page == "Project Vision":
     st.header("Vision Statement")
 
     st.markdown("""
-Apple Global Performance Analysis is an enterprise financial intelligence platform developed to transform **seventeen quarters of Apple's official SEC financial disclosures (FY2022–FY2026 Q1)** into a centralized executive decision-support system.
-
-Traditional quarterly filings satisfy regulatory reporting requirements but require significant manual effort to identify financial trends, monitor profitability, compare regional performance, evaluate product portfolios, and prepare executive reports.
-
-This platform addresses those challenges by integrating **PostgreSQL, SQL, Python, Streamlit, Plotly, Prophet Forecasting, and OpenAI** into a governed analytical environment that automates financial analytics, forecasting, visualization, and AI-assisted executive reporting.
-
-Designed as an end-to-end business intelligence solution, the platform enables leadership teams to monitor enterprise performance, identify growth opportunities, evaluate strategic risks, and support evidence-based decision-making through a single source of financial truth.
+- Transforms 17 quarters of Apple's SEC disclosures (FY2022–FY2026 Q1) into one platform.
+- Converts regulatory filings into a centralized executive decision-support and intelligence system.
+- Integrates PostgreSQL, SQL, Python, Streamlit, Plotly, Prophet, and OpenAI in one environment.
+- Automates financial analytics, forecasting, visualization, and AI-assisted executive reporting end-to-end.
+- Enables leadership to monitor performance, identify growth, and evaluate strategic risks fast.
+- Delivers a single source of financial truth for evidence-based enterprise decisions.
 """)
 
     st.markdown("---")
@@ -131,9 +130,11 @@ Designed as an end-to-end business intelligence solution, the platform enables l
     st.header("Business Challenge")
 
     st.info("""
-Enterprise financial reporting is often fragmented across spreadsheets, static reports, and multiple analytical tools.
-
-As reporting periods grow, finance teams spend considerable time consolidating historical data, validating KPIs, producing executive dashboards, and generating business insights instead of focusing on strategic decision-making.
+- Financial reporting is fragmented across spreadsheets, static reports, and disconnected tools.
+- Consolidating historical data manually is time-consuming and delays executive decision-making.
+- Validating KPIs across systems increases risk of inconsistency and reporting errors.
+- Producing executive dashboards manually diverts analyst time from strategic analysis.
+- Growing reporting periods compound complexity, making manual consolidation increasingly unsustainable.
 """)
 
     st.markdown("---")
@@ -141,10 +142,14 @@ As reporting periods grow, finance teams spend considerable time consolidating h
     st.header("Product Solution")
 
     st.success("""
-Apple Global Performance Analysis consolidates financial data engineering, business intelligence, predictive analytics, and generative AI into a unified enterprise platform capable of transforming official SEC filings into executive-ready financial intelligence within seconds.
+- Consolidates financial data engineering, business intelligence, and predictive analytics into one platform.
+- Integrates generative AI to auto-generate executive-ready financial narratives and insights.
+- Transforms official SEC filings into decision-ready intelligence within seconds, not days.
+- Provides a governed, auditable analytics pipeline ensuring consistency across reporting cycles.
+- Unifies product, regional, and profitability analysis under a single executive dashboard.
 """)
 
-    col1= st.container()
+    col1 = st.container()
 
     with col1:
         st.markdown("""
@@ -159,8 +164,6 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
 - Revenue Trend Analysis
 - Strategic Planning Support
 """)
-
-    
 
     st.markdown("---")
 
@@ -186,7 +189,7 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
 ### Value Delivered
 
 - Centralizes official Apple SEC financial disclosures into a governed analytical platform.
-- Eliminates repetitive manual financial reporting workflows.
+- Eliminates repetitive manual financial reporting workflows across teams.
 - Accelerates executive reporting through AI-generated financial narratives.
 - Provides interactive dashboards for product, regional, profitability, and forecasting analytics.
 - Supports strategic planning through predictive financial modeling.
@@ -194,10 +197,6 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
 """)
 
     st.markdown("---")
-
-    
-
-    
 
     st.header("Enterprise Scale")
 
@@ -220,11 +219,13 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
     st.header("Product Value Proposition")
 
     st.markdown("""
-Apple Global Performance Analysis demonstrates how enterprise financial reporting can evolve beyond static regulatory disclosures into an intelligent financial decision-support platform.
-
-By combining **data engineering, SQL analytics, financial modeling, business intelligence, interactive visualization, predictive forecasting, and generative AI**, the platform empowers executives with governed, data-driven insights that improve reporting efficiency, strengthen capital allocation, and support long-term strategic planning.
+- Evolves static regulatory disclosures into an intelligent, interactive decision-support platform.
+- Combines data engineering, SQL analytics, and financial modeling into one unified system.
+- Applies predictive forecasting to support proactive, forward-looking strategic planning.
+- Leverages generative AI to accelerate executive reporting and insight generation.
+- Empowers executives with governed, data-driven insights for stronger capital allocation.
+- Strengthens long-term strategic planning through consistent, reliable financial intelligence delivery.
 """)
-
 # ════════════════════════════════════════════════════════════════════
 # PAGE 2 — EXECUTIVE OVERVIEW
 # ════════════════════════════════════════════════════════════════════
