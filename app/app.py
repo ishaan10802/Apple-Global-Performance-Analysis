@@ -320,6 +320,36 @@ if page == "Project Vision":
     font-size:.82rem;
     font-weight:600;
 }
+
+.pv-metrics{
+    display:flex;
+    justify-content:space-between;
+    gap:18px;
+    margin-top:28px;
+}
+
+.pv-metric{
+    flex:1;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+}
+
+.pv-metric h2{
+    color:#3ee98b;
+    font-size:2rem;
+    margin-bottom:4px;
+    font-weight:700;
+}
+
+.pv-metric p{
+    color:#cfd3dc;
+    margin:0;
+    font-size:.9rem;
+}
+             
 </style>
                 
 
@@ -389,8 +419,8 @@ if page == "Project Vision":
                       "Designed a governed PostgreSQL warehouse from Apple SEC financial disclosures.",
                       "Automated 100+ financial KPIs using SQL, Python, and analytical models.",
                       "Built reusable analytics pipelines for revenue, regional, margin, and Services analysis.",
-                      "Developed executive dashboards translating complex financial data into actionable business insights.",
-                      "Integrated AI-generated executive summaries for faster executive interpretation and decision-making."
+                      "Developed executive dashboards translating complex financial data into actionable business insights."
+                      
             ],
         },
 
@@ -550,25 +580,58 @@ if page == "Project Vision":
         )   
 
 
-        st.markdown(
+    st.markdown(
     """
 <div class="pv-governing">
 
     <div class="pv-eyebrow">Why This Matters</div>
 
-    <h3>Enterprise Financial Intelligence</h3>
+    <h3>Enterprise Financial Intelligence Platform</h3>
 
     <p>
-    Built to replace static financial reports with an integrated intelligence
-    platform that enables executives to monitor performance, identify strategic
-    trends, forecast outcomes, and make faster, data-driven business decisions.
+    Apple Global Performance Analysis transforms publicly available SEC financial
+    disclosures into a governed enterprise analytics platform. By combining
+    automated KPI computation, AI-powered executive narratives, forecasting,
+    and interactive dashboards, it enables leadership to monitor financial
+    performance, uncover strategic opportunities, and make faster, data-driven
+    business decisions from a single source of truth.
     </p>
 
     <div class="pv-feature-row">
-        <span>✓ KPI Automation</span>
-        <span>✓ AI Narratives</span>
-        <span>✓ Forecasting</span>
-        <span>✓ Executive Reporting</span>
+        <span>✓ Automated KPI Engine</span>
+        <span>✓ AI Executive Briefs</span>
+        <span>✓ Revenue Forecasting</span>
+        <span>✓ Interactive Dashboards</span>
+        <span>✓ Financial Data Warehouse</span>
+        <span>✓ Executive Decision Support</span>
+    </div>
+
+</div>
+""",
+    unsafe_allow_html=True,
+)    
+    st.markdown(
+    """
+<div class="pv-metrics">
+
+    <div class="pv-metric">
+        <h2>17</h2>
+        <p>Financial Quarters</p>
+    </div>
+
+    <div class="pv-metric">
+        <h2>100+</h2>
+        <p>Automated KPIs</p>
+    </div>
+
+    <div class="pv-metric">
+        <h2>5</h2>
+        <p>Business Segments</p>
+    </div>
+
+    <div class="pv-metric">
+        <h2>AI</h2>
+        <p>Executive Narratives</p>
     </div>
 
 </div>
