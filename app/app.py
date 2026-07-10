@@ -197,7 +197,7 @@ Apple Global Performance Analysis consolidates financial data engineering, busin
 
     
 
-    st.markdown("---")
+    
 
     st.header("Enterprise Scale")
 
@@ -226,7 +226,7 @@ By combining **data engineering, SQL analytics, financial modeling, business int
 """)
 
 # ════════════════════════════════════════════════════════════════════
-# PAGE 1 — EXECUTIVE OVERVIEW
+# PAGE 2 — EXECUTIVE OVERVIEW
 # ════════════════════════════════════════════════════════════════════
 elif page == "📊 Executive Overview":
 
@@ -587,7 +587,7 @@ elif page == "📊 Executive Overview":
     )
 
 # ════════════════════════════════════════════════════════════════════
-# PAGE 2 — Product Analysis
+# PAGE 3 — Product Analysis
 # ════════════════════════════════════════════════════════════════════
 elif page == "📦 Product Analysis":
     st.title("Product Analysis")
@@ -1009,7 +1009,7 @@ elif page == "📦 Product Analysis":
         st.info(f"Product Deep-Dive summary couldn't be computed for {sel_product}: {_e}")
  
 # ════════════════════════════════════════════════════════════════════
-# PAGE 3 — Global PERFORMANCE
+# PAGE 4 — Global PERFORMANCE
 # ════════════════════════════════════════════════════════════════════
 elif page == "🌍 Global Performance":
     st.title("Global Performance")
@@ -1162,7 +1162,7 @@ elif page == "🌍 Global Performance":
     )
 
 # ════════════════════════════════════════════════════════════════════
-# PAGE 4 — REVENUE FORECASTING
+# PAGE 5 — REVENUE FORECASTING
 # ════════════════════════════════════════════════════════════════════
 elif page == "📈 Revenue Forecasting":
     st.title("Revenue Forecasting")
@@ -1367,7 +1367,7 @@ elif page == "📈 Revenue Forecasting":
     )
 
 # ════════════════════════════════════════════════════════════════════
-# PAGE 5 — Customer Segmentation
+# PAGE 6 — Customer Segmentation
 # ════════════════════════════════════════════════════════════════════
 elif page == "👥 Customer Segmentation":
     st.title("Customer Segmentation")
@@ -1637,7 +1637,7 @@ Revenue values in this section are simulated for analytical demonstration purpos
 
     
 # ════════════════════════════════════════════════════════════════════
-# PAGE 6 — AI INSIGHTS
+# PAGE 7 — AI INSIGHTS
 # ════════════════════════════════════════════════════════════════════
 elif page == "🤖 Analytics Assistant":
     st.title("Customer Analytics Assistant")
