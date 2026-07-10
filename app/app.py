@@ -356,129 +356,85 @@ if page == "Project Vision":
     # PRODUCT STORY
     # ==========================================================
 
-    st.markdown(
-    """
-<h2 style="margin-bottom:0;">
-Business Transformation Journey
-</h2>
-
-<p style="
-font-size:18px;
-color:#BFC6D4;
-margin-bottom:35px;
-">
-How Apple Global Performance Analysis transforms financial reporting into
-enterprise decision intelligence.
-</p>
-""",
-    unsafe_allow_html=True,
-)
-
+    st.header("From Challenge to Impact")
     narrative_cards = [
+        {
+            "eyebrow": "01 — The Challenge",
+            "accent": "amber",
+            "headline": "Executive reporting is fragmented, manual, and backward-looking",
+            "items": [
+                "SEC disclosures provide regulatory compliance but limited decision support.",
+                "KPI preparation requires manual reconciliation across disconnected spreadsheets.",
+                "Historical reporting explains past performance but offers limited forward-looking intelligence.",
+                "No governed analytical layer exists across products, regions, margins and Services."
+            ],
+        },
+        {
+            "eyebrow": "02 — The Vision",
+            "accent": "cyan",
+            "headline": "One governed platform, from raw filings to executive-ready insight",
+            "items": [
+                    "Convert SEC disclosures into a structured financial warehouse.",
+                    "Establish a governed single source of truth across financial dimensions.",
+                    "Replace static reporting with interactive executive intelligence.",
+                    "Combine quantitative analytics with AI-generated business narratives."
+            ],
+        },  
 
-     {
-        "eyebrow": "01 • BUSINESS CHALLENGE",
-        "accent": "amber",
-        "headline": "Financial reporting remained fragmented and retrospective.",
-        "items": [
-            "SEC filings provide compliance but limited executive intelligence.",
-            "Manual KPI preparation increases reporting effort and inconsistency.",
-            "Disconnected financial views delay strategic decision-making.",
-            "Limited visibility across Products, Services, Regions and Margins."
-        ],
-     },
+        {
+             "eyebrow": "03 — The Data Analyst's Contribution",
+             "accent": "lilac",
+             "headline": "Transforming financial data into executive decision intelligence",
+             "items": [
+                      "Designed a governed PostgreSQL warehouse from Apple SEC financial disclosures.",
+                      "Automated 100+ financial KPIs using SQL, Python, and analytical models.",
+                      "Built reusable analytics pipelines for revenue, regional, margin, and Services analysis.",
+                      "Developed executive dashboards translating complex financial data into actionable business insights.",
+                      "Integrated AI-generated executive summaries for faster executive interpretation and decision-making."
+            ],
+        },
 
-     {
-        "eyebrow": "02 • PRODUCT VISION",
-        "accent": "cyan",
-        "headline": "Create a governed financial intelligence platform.",
-        "items": [
-            "Transform SEC filings into a centralized analytical warehouse.",
-            "Build a governed single source of financial truth.",
-            "Deliver executive dashboards instead of static reports.",
-            "Integrate AI-generated business narratives with analytics."
-        ],
-     },
+        {
+            "eyebrow": "04 — The Solution",
+            "accent": "blue",
+            "headline": "A PostgreSQL-backed platform with automated KPIs and AI-generated narrative",
+            "items": [
+                "PostgreSQL warehouse with governed analytical views.",
+                "Automated KPI generation replacing spreadsheet calculations.",
+                "Interactive Streamlit dashboards for executive reporting.",
+                "Prophet forecasting for forward-looking revenue analysis.",
+                "AI-generated executive narratives."
+            ],
+        },
+        {
+            "eyebrow": "05 — The Impact",
+            "accent": "green",
+            "headline": "A single trusted source for faster, better-informed decisions",
+            "items": [
+                "Reduced manual reporting through automated SQL pipelines.",
+                "Standardized KPI definitions across products and regions.",
+                "Identified revenue concentration, margin trends and strategic business risks.",
+                "Enabled interactive financial exploration instead of static reporting.",
+                "Combined analytics with AI-generated executive communication."
+            ],
+        },
+    ]
 
-     {
-        "eyebrow": "03 • DATA ANALYST CONTRIBUTION",
-        "accent": "lilac",
-        "headline": "Designed and developed the complete analytics platform.",
-        "items": [
-            "Designed PostgreSQL financial warehouse architecture.",
-            "Automated 100+ enterprise KPIs using SQL and Python.",
-            "Developed forecasting, profitability and regional analytics.",
-            "Built interactive executive dashboards in Streamlit.",
-            "Integrated OpenAI-powered executive business summaries."
-        ],
-     },
-
-     {
-        "eyebrow": "04 • PLATFORM CAPABILITIES",
-        "accent": "blue",
-        "headline": "Enterprise-grade analytics with intelligent automation.",
-        "items": [
-            "Governed PostgreSQL analytical data model.",
-            "Automated KPI engine replacing spreadsheet workflows.",
-            "Interactive executive financial dashboards.",
-            "AI-generated executive brief generation.",
-            "Revenue forecasting using Prophet models."
-        ],
-     },
-
-     {
-        "eyebrow": "05 • BUSINESS VALUE",
-        "accent": "green",
-        "headline": "Delivering measurable business intelligence.",
-        "items": [
-            "Reduced manual reporting through SQL automation.",
-            "Standardized enterprise financial KPIs.",
-            "Improved visibility into regional and product performance.",
-            "Accelerated executive reporting workflows.",
-            "Enabled faster, data-driven strategic decisions."
-        ],
-     }
-
- ]
-
-    col1, col2 = st.columns(2, gap="large")
+    col_a, col_b = st.columns(2)
 
     for i, card in enumerate(narrative_cards):
-
-     items = ""
-
-     for item in card["items"]:
-        items += f"""
-        <div class="pv-item">
-            <span class="pv-check">✓</span>
-            <span>{item}</span>
-        </div>
-        """
-
-     html = f"""
+        items_html = "".join(f"<li>{item}</li>" for item in card["items"])
+        card_html = f"""
 <div class="pv-card accent-{card['accent']}">
-
-    <div class="pv-eyebrow">
-        {card['eyebrow']}
-    </div>
-
-    <div class="pv-headline">
-        {card['headline']}
-    </div>
-
-    <div class="pv-items">
-
-        {items}
-
-    </div>
-
+<div class="pv-eyebrow">{card['eyebrow']}</div>
+<div class="pv-headline">{card['headline']}</div>
+<ul class="pv-list">{items_html}</ul>
 </div>
 """
+        with (col_a if i % 2 == 0 else col_b):
+            st.markdown(card_html, unsafe_allow_html=True)
 
-    with (col1 if i % 2 == 0 else col2):
-        st.markdown(html, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("---") 
     # ==========================================================
     # HOW THE PLATFORM WORKS
     # ==========================================================
