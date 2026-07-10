@@ -109,122 +109,243 @@ def kpi_card(label, value, delta=None, delta_suffix=''):
 #------------------------------
 if page == "Project Vision":
 
-    st.title("Project Vision")
-    st.caption("Apple Global Performance Analysis • Enterprise Financial Intelligence Platform")
+    st.title("Apple Global Performance Analysis")
+    st.caption("Enterprise Financial Intelligence Platform")
 
     st.markdown("---")
 
-    st.header("Vision Statement")
-
-    st.markdown("""
-- Transforms 17 quarters of Apple's SEC disclosures (FY2022–FY2026 Q1) into one platform.
-- Converts regulatory filings into a centralized executive decision-support and intelligence system.
-- Integrates PostgreSQL, SQL, Python, Streamlit, Plotly, Prophet, and OpenAI in one environment.
-- Automates financial analytics, forecasting, visualization, and AI-assisted executive reporting end-to-end.
-- Enables leadership to monitor performance, identify growth, and evaluate strategic risks fast.
-- Delivers a single source of financial truth for evidence-based enterprise decisions.
-""")
-
-    st.markdown("---")
-
-    st.header("Business Challenge")
-
-    st.info("""
-- Financial reporting is fragmented across spreadsheets, static reports, and disconnected tools.
-- Consolidating historical data manually is time-consuming and delays executive decision-making.
-- Validating KPIs across systems increases risk of inconsistency and reporting errors.
-- Producing executive dashboards manually diverts analyst time from strategic analysis.
-- Growing reporting periods compound complexity, making manual consolidation increasingly unsustainable.
-""")
-
-    st.markdown("---")
-
-    st.header("Product Solution")
+    # ==========================================================
+    # HERO
+    # ==========================================================
 
     st.success("""
-- Consolidates financial data engineering, business intelligence, and predictive analytics into one platform.
-- Integrates generative AI to auto-generate executive-ready financial narratives and insights.
-- Transforms official SEC filings into decision-ready intelligence within seconds, not days.
-- Provides a governed, auditable analytics pipeline ensuring consistency across reporting cycles.
-- Unifies product, regional, and profitability analysis under a single executive dashboard.
+### Executive Overview
+
+Transforming **17 quarters of Apple's official SEC financial disclosures**
+into AI-powered financial intelligence for executive decision-making.
 """)
-
-    col1 = st.container()
-
-    with col1:
-        st.markdown("""
-### Business Capabilities
-
-- Executive KPI Dashboard
-- Financial Performance Analytics
-- Global Revenue & Margin Monitoring
-- Product Performance Analysis
-- Services Business Analysis
-- Profitability Monitoring
-- Revenue Trend Analysis
-- Strategic Planning Support
-""")
-
-    st.markdown("---")
-
-    st.header("Business Impact")
-
-    impact1, impact2, impact3 = st.columns(3)
-
-    with impact1:
-        st.metric("Financial KPIs", "100+")
-        st.caption("Enterprise performance indicators")
-
-    with impact2:
-        st.metric("Reporting Period", "17 Quarters")
-        st.caption("FY2022 Q1 – FY2026 Q1")
-
-    with impact3:
-        st.metric("Forecast Accuracy", "MAPE 3.6%")
-        st.caption("Validated forecasting model")
 
     st.markdown("")
 
-    st.markdown("""
-### Value Delivered
+    # ==========================================================
+    # EXECUTIVE OVERVIEW
+    # ==========================================================
 
-- Centralizes official Apple SEC financial disclosures into a governed analytical platform.
-- Eliminates repetitive manual financial reporting workflows across teams.
-- Accelerates executive reporting through AI-generated financial narratives.
-- Provides interactive dashboards for product, regional, profitability, and forecasting analytics.
-- Supports strategic planning through predictive financial modeling.
-- Delivers a single authoritative source of enterprise financial intelligence.
+    st.header("Executive Overview")
+
+    st.markdown("""
+<style>
+
+.exec-card{
+    background:#1C1C1E;
+    padding:24px;
+    border-radius:14px;
+    border-top:4px solid #0A84FF;
+    margin-bottom:20px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.25);
+    min-height:310px;
+}
+
+.exec-card h3{
+    color:white;
+    margin-bottom:18px;
+}
+
+.exec-card ul{
+    color:#D1D1D6;
+    line-height:1.8;
+    padding-left:18px;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+    cards = [
+
+        {
+            "title":"🎯 Vision",
+            "items":[
+                "Transform Apple SEC filings into enterprise financial intelligence.",
+                "Centralize executive financial reporting.",
+                "Deliver governed enterprise analytics.",
+                "Automate KPI reporting with AI.",
+                "Enable evidence-based strategic planning."
+            ]
+        },
+
+        {
+            "title":"📊 Business Challenge",
+            "items":[
+                "Financial reporting remains fragmented.",
+                "Manual KPI preparation consumes analyst time.",
+                "Static reports delay executive decisions.",
+                "Historical analysis requires repetitive effort.",
+                "Leadership needs faster financial visibility."
+            ]
+        },
+
+        {
+            "title":"🚀 Product Solution",
+            "items":[
+                "Centralized enterprise financial platform.",
+                "Automated KPI calculations.",
+                "Interactive executive dashboards.",
+                "Predictive revenue forecasting.",
+                "AI-generated executive narratives."
+            ]
+        },
+
+        {
+            "title":"💡 Value Proposition",
+            "items":[
+                "Accelerates executive reporting.",
+                "Improves enterprise governance.",
+                "Supports strategic planning.",
+                "Enhances financial visibility.",
+                "Creates one trusted financial intelligence platform."
+            ]
+        }
+
+    ]
+
+    left,right = st.columns(2)
+
+    for i,card in enumerate(cards):
+
+        html = f"""
+<div class="exec-card">
+
+<h3>{card['title']}</h3>
+
+<ul>
+
+{''.join(f'<li>{item}</li>' for item in card['items'])}
+
+</ul>
+
+</div>
+"""
+
+        with (left if i%2==0 else right):
+            st.markdown(html,unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ==========================================================
+    # EXECUTIVE WORKFLOW
+    # ==========================================================
+
+    st.header("Enterprise Analytics Workflow")
+
+    workflow1, workflow2, workflow3, workflow4, workflow5 = st.columns(5)
+
+    with workflow1:
+        st.info("📑\n\nSEC Filings")
+
+    with workflow2:
+        st.info("🗄️\n\nData Warehouse")
+
+    with workflow3:
+        st.info("📈\n\nFinancial Analytics")
+
+    with workflow4:
+        st.info("🤖\n\nAI Insights")
+
+    with workflow5:
+        st.info("👔\n\nExecutive Decisions")
+
+    st.markdown("---")
+
+    # ==========================================================
+    # BUSINESS CAPABILITIES
+    # ==========================================================
+
+    st.header("Core Business Capabilities")
+
+    cap1,cap2 = st.columns(2)
+
+    with cap1:
+
+        st.checkbox("Executive KPI Dashboard",value=True,disabled=True)
+        st.checkbox("Revenue & Margin Intelligence",value=True,disabled=True)
+        st.checkbox("Regional Performance Analytics",value=True,disabled=True)
+        st.checkbox("Product Portfolio Analytics",value=True,disabled=True)
+
+    with cap2:
+
+        st.checkbox("AI Executive Reporting",value=True,disabled=True)
+        st.checkbox("Predictive Revenue Forecasting",value=True,disabled=True)
+        st.checkbox("Services Business Intelligence",value=True,disabled=True)
+        st.checkbox("Strategic Planning Support",value=True,disabled=True)
+
+    st.markdown("---")
+
+    # ==========================================================
+    # BUSINESS IMPACT
+    # ==========================================================
+
+    st.header("Business Impact")
+
+    k1,k2,k3 = st.columns(3)
+
+    with k1:
+        st.metric("Enterprise KPIs","100+")
+        st.caption("Executive Performance Indicators")
+
+    with k2:
+        st.metric("Reporting Period","17 Quarters")
+        st.caption("FY2022 Q1 – FY2026 Q1")
+
+    with k3:
+        st.metric("Forecast Accuracy","MAPE 3.6%")
+        st.caption("Validated Prophet Model")
+
+    st.markdown("")
+
+    st.success("""
+### Executive Value Delivered
+
+• Centralized enterprise financial intelligence
+
+• Automated executive reporting
+
+• Interactive financial dashboards
+
+• AI-powered business insights
+
+• Revenue forecasting and planning
+
+• Governed enterprise analytics
 """)
 
     st.markdown("---")
 
+    # ==========================================================
+    # ENTERPRISE SCALE
+    # ==========================================================
+
     st.header("Enterprise Scale")
 
-    scale1, scale2, scale3, scale4 = st.columns(4)
+    s1,s2,s3,s4 = st.columns(4)
 
-    with scale1:
-        st.metric("Revenue Analysed", "$391B+")
+    with s1:
+        st.metric("Revenue Analysed","$391B+")
 
-    with scale2:
-        st.metric("Services Revenue", "$30.0B")
+    with s2:
+        st.metric("Services Revenue","$30.0B")
 
-    with scale3:
-        st.metric("Services Margin", "~76%")
+    with s3:
+        st.metric("Services Margin","76%")
 
-    with scale4:
-        st.metric("Americas Mix", "42.6%")
+    with s4:
+        st.metric("Americas Revenue Mix","42.6%")
 
     st.markdown("---")
 
-    st.header("Product Value Proposition")
+    st.info("""
+### Executive Summary
 
-    st.markdown("""
-- Evolves static regulatory disclosures into an intelligent, interactive decision-support platform.
-- Combines data engineering, SQL analytics, and financial modeling into one unified system.
-- Applies predictive forecasting to support proactive, forward-looking strategic planning.
-- Leverages generative AI to accelerate executive reporting and insight generation.
-- Empowers executives with governed, data-driven insights for stronger capital allocation.
-- Strengthens long-term strategic planning through consistent, reliable financial intelligence delivery.
+Apple Global Performance Analysis transforms official SEC financial disclosures into a centralized enterprise financial intelligence platform combining data engineering, financial analytics, business intelligence, forecasting, and generative AI to accelerate executive decision-making.
 """)
 # ════════════════════════════════════════════════════════════════════
 # PAGE 2 — EXECUTIVE OVERVIEW
