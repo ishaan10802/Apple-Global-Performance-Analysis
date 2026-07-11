@@ -66,7 +66,7 @@ with st.sidebar:
     st.markdown("*Business Analytics Platform*")
     st.markdown("---")
     page = st.radio("Agenda", [
-            "Project Vision",
+            "About the Project",
         "📊 Executive Overview",
         "📦 Product Analysis",
         "🌍 Global Performance",
@@ -105,12 +105,12 @@ def kpi_card(label, value, delta=None, delta_suffix=''):
         </div>
     """, unsafe_allow_html=True)
 #------------------------------    
-# PAGE 1 - PROJECT VISION
+# PAGE 1 - About the Project
 #------------------------------
-if page == "Project Vision":
+if page == "About the Project":
 
     st.title("Apple Global Performance Analysis")
-    st.caption("Enterprise Financial Intelligence Platform  ·  FY2022 Q1 – FY2026 Q1")
+    st.caption("Enterprise Analytics Platform  ·  FY2022 Q1 – FY2026 Q1")
 
     st.markdown("---")
 
@@ -361,18 +361,11 @@ if page == "Project Vision":
 
     st.markdown("""
 <div class="pv-governing">
-<div class="pv-eyebrow">Vision</div>
-<p>• Converts 17 quarters of Apple SEC financial disclosures into a governed enterprise financial intelligence platform.
-
-• Automates financial reporting by replacing manual spreadsheet workflows with SQL-driven analytics pipelines.
-
-• Establishes a centralized PostgreSQL warehouse as a governed single source of truth for executive reporting.
-
-• Delivers 100+ automated financial KPIs covering revenue, profitability, regional performance, product portfolio, and Services growth.
-
-• Combines advanced analytics with AI-generated executive narratives to transform complex financial data into decision-ready insights.
-
-• Demonstrates how a Data Analyst can integrate SQL, Python, Streamlit, forecasting, and Generative AI into an enterprise analytics solution.</p>
+<div class="pv-eyebrow">Project Overview</div>
+<p> • Elevates SEC financial disclosures into enterprise-grade decision intelligence.
+    • Operationalizes 100+ governed financial KPIs for executive visibility.
+    • Centralizes trusted financial intelligence across enterprise performance.
+    • Unifies predictive forecasting with AI-powered executive insights.
 </div>
 """, unsafe_allow_html=True)
 
@@ -392,7 +385,7 @@ if page == "Project Vision":
         {
             "eyebrow": "01 — The Challenge",
             "accent": "amber",
-            "headline": "Executive reporting is fragmented, manual, and backward-looking",
+            "headline": "Financial reporting is fragmented, manual & retrospective",
             "items": [
                 "SEC disclosures provide regulatory compliance but limited decision support.",
                 "KPI preparation requires manual reconciliation across disconnected spreadsheets.",
@@ -408,12 +401,12 @@ if page == "Project Vision":
                     "Convert SEC disclosures into a structured financial warehouse.",
                     "Establish a governed single source of truth across financial dimensions.",
                     "Replace static reporting with interactive executive intelligence.",
-                    "Combine quantitative analytics with AI-generated business narratives."
+                    "Combine quantitative analytics with business narratives."
             ],
         },  
 
         {
-             "eyebrow": "03 — The Data Analyst's Contribution",
+             "eyebrow": "03 — The Analyst's Contribution",
              "accent": "lilac",
              "headline": "Transforming financial data into executive decision intelligence",
              "items": [
@@ -428,25 +421,24 @@ if page == "Project Vision":
         {
             "eyebrow": "04 — The Solution",
             "accent": "blue",
-            "headline": "A PostgreSQL-backed platform with automated KPIs and AI-generated narrative",
+            "headline": "PostgreSQL-Powered Business Analytics Platform",
             "items": [
-                "PostgreSQL warehouse with governed analytical views.",
-                "Automated KPI generation replacing spreadsheet calculations.",
-                "Interactive Streamlit dashboards for executive reporting.",
-                "Prophet forecasting for forward-looking revenue analysis."
-                
+                "Governed PostgreSQL warehouse establishing a trusted financial data foundation.",
+                "Automated KPI pipelines streamlining enterprise performance measurement.",
+                "Interactive executive dashboards enabling real-time strategic visibility.",
+                "Predictive revenue forecasting supporting proactive business planning."
             ],
         },
         {
             "eyebrow": "05 — The Impact",
             "accent": "green",
-            "headline": "A single trusted source for faster, better-informed decisions",
+            "headline": "A single trusted source for faster, better-business decisions",
             "items": [
                 "Reduced manual reporting through automated SQL pipelines.",
                 "Standardized KPI definitions across products and regions.",
                 "Identified revenue concentration, margin trends and strategic business risks.",
-                "Enabled interactive financial exploration instead of static reporting.",
-                "Combined analytics with AI-generated executive communication."
+                "Enabled dynamic financial intelligence for faster executive decisions.",
+                
             ],
         },
     ]
