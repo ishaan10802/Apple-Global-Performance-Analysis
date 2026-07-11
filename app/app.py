@@ -358,19 +358,19 @@ if page == "About the Project":
     # ==========================================================
     # GOVERNING INSIGHT (PYRAMID PRINCIPLE — ANSWER FIRST)
     # ==========================================================
-
     st.markdown("""
 <div class="pv-governing">
 <div class="pv-eyebrow">Project Overview</div>
-<p> • Elevates SEC financial disclosures into enterprise-grade decision intelligence.
-    • Operationalizes 100+ governed financial KPIs for executive visibility.
-    • Centralizes trusted financial intelligence across enterprise performance.
-    • Unifies predictive forecasting with AI-powered executive insights.
+<ul class="pv-bullet-list">
+<li>Elevates SEC financial disclosures into enterprise-grade decision intelligence.</li>
+<li>Operationalizes 100+ governed financial KPIs for executive visibility.</li>
+<li>Centralizes trusted financial intelligence across enterprise performance.</li>
+<li>Unifies predictive forecasting with AI-powered executive insights.</li>
+</ul>
 </div>
 """, unsafe_allow_html=True)
 
-    st.markdown("")
-    
+    st.markdown("")    
 
     # ==========================================================
     # FROM CHALLENGE TO IMPACT (SITUATION – COMPLICATION – RESOLUTION)
