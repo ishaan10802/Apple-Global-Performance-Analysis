@@ -14,15 +14,15 @@ matplotlib==3.8.4
 
 # Web framework
 streamlit==1.49.0
-streamlit-extras==0.4.2
+#streamlit-extras==0.4.2
 
 # AI
 openai==2.38.0
 
 # Export / reporting
-reportlab==4.1.0
-openpyxl==3.1.2
-kaleido==0.2.1
+#reportlab==4.1.0
+#openpyxl==3.1.2
+#kaleido==0.2.1
 
 # Utilities
 python-dotenv==1.0.1
