@@ -363,9 +363,9 @@ if page == "About the Project":
 <div class="pv-eyebrow">Project Overview</div>
 <ul class="pv-bullet-list">
 <li>Elevates SEC financial disclosures into enterprise-grade decision intelligence.</li>
-<li>Operationalizes 100+ governed financial KPIs for executive visibility.</li>
+<li>Operationalizes 25+ governed financial KPIs for executive visibility.</li>
 <li>Centralizes trusted financial intelligence across enterprise performance.</li>
-<li>Unifies predictive forecasting with AI-powered executive insights.</li>
+<li>Unifies predictive forecasting with faster business insights.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -380,7 +380,7 @@ if page == "About the Project":
     # PRODUCT STORY
     # ==========================================================
     st.markdown("---")
-    st.header("From Challenge to Impact")
+    st.header("Challenges & Impact")
     narrative_cards = [
         {
             "eyebrow": "01 — The Challenge",
@@ -411,7 +411,7 @@ if page == "About the Project":
              "headline": "Transforming financial data into executive decision intelligence",
              "items": [
                       "Designed a governed PostgreSQL warehouse from Apple SEC financial disclosures.",
-                      "Automated 100+ financial KPIs using SQL, Python, and analytical models.",
+                      "Automated 25+ financial KPIs using SQL, Python, and analytical models.",
                       "Built reusable analytics pipelines for revenue, regional, margin, and Services analysis.",
                       "Developed executive dashboards translating complex financial data into actionable business insights."
                       
@@ -437,7 +437,7 @@ if page == "About the Project":
                 "Reduced manual reporting through automated SQL pipelines.",
                 "Standardized KPI definitions across products and regions.",
                 "Identified revenue concentration, margin trends and strategic business risks.",
-                "Enabled dynamic financial intelligence for faster executive decisions.",
+                "Enabled dynamic financial intelligence for faster decisions.",
                 
             ],
         },
@@ -547,12 +547,12 @@ if page == "About the Project":
      },
      {
         "label": "Enterprise KPIs",
-        "value": "100+",
+        "value": "25+",
         "sub": "Automated Financial Metrics"
      },
      {
         "label": "Business Dimensions",
-        "value": "10+",
+        "value": "5+",
         "sub": "Revenue, Margin, Regions & Services"
      },
     ]
@@ -1100,8 +1100,8 @@ elif page == "📦 Product Analysis":
     <span style="font-size:11px;font-weight:600;color:#FF453A;letter-spacing:0.08em;text-transform:uppercase;">Wearables Drag</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-      &bull; Mac and iPad showed the highest volatility.<br>
-      &bull; Performance remained heavily launch-cycle driven.
+      &bull; Wearables & Home underperformed relative to other product lines, with sustained YoY declines across most quarters.<br>
+      &bull; The category contributed limited growth momentum, increasing reliance on iPhone and Services to drive overall revenue expansion.
     </p>
     </div>
 
