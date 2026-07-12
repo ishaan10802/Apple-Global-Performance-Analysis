@@ -594,7 +594,7 @@ if page == "About the Project":
      },
      {
         "label": "Forecast Model",
-        "value": "Prophet"
+        "value": "Seasonal Linear Regression "
      },
   ]
 
@@ -673,7 +673,7 @@ Financial metrics reconciled against Apple's official SEC disclosures
 <br><br>
 
 <b>Forecasting</b><br>
-Revenue projections validated using historical back-testing with Prophet
+Revenue projections validated using historical back-testing with Seasonal Linear Regression 
 
 </p>
 
