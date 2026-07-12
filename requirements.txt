@@ -6,11 +6,11 @@ sqlalchemy==2.0.28
 pandas==2.2.0
 numpy==1.26.4
 scikit-learn==1.4.0
-prophet==1.1.5
+
 
 # Visualization
 plotly==5.20.0
-matplotlib
+matplotlib==3.8.4
 
 # Web framework
 streamlit==1.49.0
