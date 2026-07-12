@@ -1100,8 +1100,8 @@ elif page == "📦 Product Analysis":
     <span style="font-size:11px;font-weight:600;color:#FF453A;letter-spacing:0.08em;text-transform:uppercase;">Wearables Drag</span>
     </div>
     <p style="margin:0;font-size:13.5px;color:#D1D1D6;line-height:1.65;">
-      &bull; Wearables & Home underperformed relative to other product lines, with sustained YoY declines across most quarters.<br>
-      &bull; The category contributed limited growth momentum, increasing reliance on iPhone and Services to drive overall revenue expansion.
+      &bull; Wearables & Home underperformed, posting YoY declines across most quarters.<br>
+      &bull; Limited growth increased dependence on iPhone and Services.
     </p>
     </div>
 
