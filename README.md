@@ -155,7 +155,7 @@ Generates:
 | AI | OpenAI GPT-4o |
 | Deployment | Render |
 | Dashboard | Streamlit |
-| KPIs | 100+ |
+| KPIs | 25+ |
 | Architecture | Enterprise Data Warehouse |
 
 ---
@@ -325,7 +325,7 @@ apple-global-performance-analysis/
 |---------|------|
 | Historical Coverage | 17 Financial Quarters |
 | Data Source | Apple SEC Filings |
-| Automated KPIs | 100+ |
+| Automated KPIs | 25+ |
 | Dashboard Pages | 6 |
 | Charts & Visualizations | 30+ |
 | AI Module | GPT-4o |
