@@ -3,8 +3,6 @@
 <!-- ========================================================= -->
 
 
-<h1 align="center">
-🍎 Apple Global Performance Analysis
 
 <p align="center">
   <img src="assets/banner.png" width="100%" alt="Banner">
