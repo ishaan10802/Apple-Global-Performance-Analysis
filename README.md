@@ -2,14 +2,9 @@
 <!-- HERO BANNER -->
 <!-- ========================================================= -->
 
-<p align="center">
-    <img src="assets/banner.png" width="100%">
-</p>
 
 <h1 align="center">
 🍎 Apple Global Performance Analysis
-</h1>
-# 🍎 Apple Global Performance Analysis
 
 <p align="center">
   <img src="assets/banner.png" width="100%" alt="Banner">
@@ -33,19 +28,12 @@ Enterprise Business Analysis & Decision Support Platform built with SQL, Python,
 
 ---
 
-# 🌐 Live Application
 
-###  Interactive Dashboard
-
-**https://apple-global-performance-analysis.onrender.com/**
-
----
-
-## 🌐 Live Application
+##  Live Application
 
 https://apple-global-performance-analysis.onrender.com/
 
-## 📸 Dashboard Preview
+##  Dashboard Preview
 
 <p align="center">
   <img src="assets/hero-dashboard.png" width="100%" alt="Dashboard Preview">
@@ -762,7 +750,7 @@ The project demonstrates modern data analytics, financial intelligence, machine 
 
 ---
 
-# 👨 Author
+# Author
 
 **Ishaan Aditya**
 
@@ -772,7 +760,7 @@ GitHub:
 https://github.com/ishaan10802
 
 LinkedIn:
-*Add your LinkedIn profile URL here.*
+
 
 Email:
 ishaan10802@gmail.com
