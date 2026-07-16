@@ -74,17 +74,3 @@ Example questions:
 - "How has China's revenue share changed since FY2022?"
 - "What is the Services attach rate trend over 4 quarters?"
 
----
-
-## API Cost Estimate
-
-| Module | GPT-4o calls | Cost per run |
-|---|---|---|
-| Insight Engine | 1 | ~$0.02 |
-| Narrative Writer | 5 | ~$0.08 |
-| Anomaly Explainer | up to 12 | ~$0.12 |
-| Q&A (per question) | 1 | ~$0.01 |
-
-**Full demo run: under $0.25 USD**
-
----
