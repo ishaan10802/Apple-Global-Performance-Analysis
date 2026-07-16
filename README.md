@@ -3,21 +3,27 @@
 <!-- ========================================================= -->
 
 <p align="center">
-    <img src="assets/banner.svg" width="100%">
+    <img src="assets/banner.png" width="100%">
 </p>
 
 <h1 align="center">
 🍎 Apple Global Performance Analysis
 </h1>
+# 🍎 Apple Global Performance Analysis
 
 <p align="center">
-Enterprise Financial Intelligence & Decision Support Platform built with SQL, Python, PostgreSQL, Machine Learning and Generative AI.
+  <img src="assets/banner.png" width="100%" alt="Banner">
+</p>
+
+
+<p align="center">
+Enterprise Business Analysis & Decision Support Platform built with SQL, Python, PostgreSQL, Machine Learning and Generative AI.
 </p>
 
 <p align="center">
 
 <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/PostgreSQL-16-blue?style=for-the-badge&logo=postgresql">
+<img src="https://img.shields.io/badge/PostgreSQL-18-blue?style=for-the-badge&logo=postgresql">
 <img src="https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge&logo=streamlit">
 <img src="https://img.shields.io/badge/OpenAI-GPT--4o-green?style=for-the-badge">
 <img src="https://img.shields.io/badge/scikit--learn-ML-orange?style=for-the-badge&logo=scikitlearn">
@@ -29,23 +35,34 @@ Enterprise Financial Intelligence & Decision Support Platform built with SQL, Py
 
 # 🌐 Live Application
 
-### 🚀 Interactive Dashboard
+###  Interactive Dashboard
 
 **https://apple-global-performance-analysis.onrender.com/**
 
 ---
 
-# 📌 Overview
+## 🌐 Live Application
 
-Apple Global Performance Analysis is an enterprise-grade financial intelligence platform that transforms Apple SEC financial disclosures into interactive executive decision intelligence.
+https://apple-global-performance-analysis.onrender.com/
 
-Instead of static quarterly reports, the platform delivers an integrated analytics experience combining SQL-powered financial KPIs, machine learning forecasting, AI-generated executive narratives, and interactive dashboards.
+## 📸 Dashboard Preview
 
-The application centralizes financial intelligence into a governed analytics platform capable of supporting executive performance monitoring, revenue analysis, forecasting, profitability analysis, and strategic decision-making.
+<p align="center">
+  <img src="assets/hero-dashboard.png" width="100%" alt="Dashboard Preview">
+</p>
+
+
+##  Overview
+
+Apple Global Performance Analysis is an enterprise-grade financial analysis platform that transforms Apple SEC financial disclosures into impactful decision support system.
+
+Instead of static quarterly reports, the platform delivers an integrated analytics experience combining SQL-powered financial KPIs, machine learning forecasting, AI-generated  narratives, and interactive dashboards.
+
+The application centralizes financial core into a governed analytics platform capable of supporting executive performance monitoring, revenue analysis, forecasting, profitability analysis, and strategic decision-making.
 
 ---
 
-# 🎯 Business Problem
+# Business Problem
 
 Traditional financial reporting suffers from several limitations:
 
@@ -58,7 +75,7 @@ Traditional financial reporting suffers from several limitations:
 
 ---
 
-# 💡 Solution
+#  Solution
 
 This platform replaces traditional reporting with an automated financial intelligence system.
 
@@ -74,9 +91,9 @@ The solution integrates:
 
 ---
 
-# ✨ Key Features
+#  Key Features
 
-## 📊 Executive Financial Intelligence
+##  Financial Intelligence
 
 - Executive KPI dashboard
 - Revenue trend analysis
@@ -87,7 +104,7 @@ The solution integrates:
 
 ---
 
-## 📦 Product Intelligence
+##  Product Analysis
 
 - Product revenue comparison
 - Product mix analysis
@@ -97,7 +114,7 @@ The solution integrates:
 
 ---
 
-## 🌍 Global Performance
+##  Global Performance
 
 - Regional revenue analysis
 - Geographic contribution
@@ -107,7 +124,7 @@ The solution integrates:
 
 ---
 
-## 📈 Machine Learning Forecasting
+##  Machine Learning Forecasting
 
 - Seasonal Linear Regression
 - Revenue forecasting
@@ -117,7 +134,7 @@ The solution integrates:
 
 ---
 
-## 👥 Customer Intelligence
+##  Customer Segmentation
 
 Synthetic customer dataset demonstrating:
 
@@ -128,7 +145,7 @@ Synthetic customer dataset demonstrating:
 
 ---
 
-## 🤖 AI Executive Insights
+## Analtics Assistant
 
 Powered using OpenAI GPT-4o.
 
@@ -143,7 +160,7 @@ Generates:
 
 ---
 
-# 🚀 Platform Highlights
+#  Platform Highlights
 
 | Capability | Description |
 |------------|-------------|
@@ -163,10 +180,13 @@ Generates:
 <!-- SYSTEM ARCHITECTURE -->
 <!-- ========================================================= -->
 
-# 🏗️ System Architecture
+##  System Architecture
+
+
+The platform follows a modern enterprise analytics architecture...
 
 <p align="center">
-    <img src="assets/architecture.svg" width="100%">
+  <img src="assets/architecture.png" width="95%" alt="System Architecture">
 </p>
 
 The platform follows a modern enterprise analytics architecture where financial data flows through a governed PostgreSQL warehouse before being transformed into interactive dashboards, machine learning forecasts, and AI-generated executive insights.
@@ -204,7 +224,7 @@ Executive Decision Support
 
 ---
 
-# ⚙️ Technology Stack
+#  Technology Stack
 
 | Layer | Technologies |
 |---------|-------------|
@@ -223,7 +243,7 @@ Executive Decision Support
 
 ---
 
-# 🗂️ Project Structure
+#  Project Structure
 
 ```text
 apple-global-performance-analysis/
@@ -247,9 +267,9 @@ apple-global-performance-analysis/
 │   └── app.py
 │
 ├── assets/
-│   ├── banner.svg
-│   ├── architecture.svg
+│   ├── banner.png
 │   ├── hero-dashboard.png
+│   ├── architecture.png
 │   └── screenshots/
 │       ├── analytics-assistant.png
 │       ├── customer-segmentation.png
@@ -293,7 +313,7 @@ apple-global-performance-analysis/
 
 ---
 
-# 🖥️ Platform Modules
+#  Platform Modules
 
 | Module | Description |
 |---------|-------------|
@@ -302,7 +322,7 @@ apple-global-performance-analysis/
 | 🌍 Global Performance | Geographic revenue trends, regional comparisons and market concentration |
 | 📈 Revenue Forecasting | Machine Learning revenue forecasting with confidence intervals |
 | 👥 Customer Segmentation | Synthetic RFM and Cohort Analysis demonstrating customer analytics |
-| 🤖 AI Executive Insights | GPT-4o powered financial narrative generation and executive Q&A |
+| 🤖 AI Executive Insights | GPT-4o powered Q&A Assistance|
 
 ---
 
@@ -319,7 +339,7 @@ apple-global-performance-analysis/
 |------------------------|-----------------------|
 | ![](assets/screenshots/customer-segmentation.png) | ![](assets/screenshots/analytics-assistant.png) |
 
-# 📊 Platform Statistics
+#  Platform Statistics
 
 | Metric | Value |
 |---------|------|
@@ -340,7 +360,7 @@ apple-global-performance-analysis/
 <!-- DATABASE -->
 <!-- ========================================================= -->
 
-# 🗄️ Database Architecture
+#  Database Architecture
 
 The platform follows a layered analytics architecture that separates raw financial data, business logic, and presentation. This ensures every KPI shown in the dashboard originates from a governed SQL calculation rather than being recomputed in multiple places.
 
@@ -369,7 +389,7 @@ The warehouse acts as the **single source of truth** for every financial metric 
 
 ---
 
-# 🧮 KPI Framework
+#  KPI Framework
 
 The platform automatically computes financial KPIs from Apple's public SEC disclosures.
 
@@ -439,7 +459,7 @@ The platform automatically computes financial KPIs from Apple's public SEC discl
 
 ---
 
-# 🤖 AI Executive Insights
+#  Analytics Assiatnt
 
 The platform integrates **OpenAI GPT-4o** to transform financial KPIs into executive-ready business narratives.
 
@@ -458,7 +478,7 @@ This ensures AI responses remain grounded in computed financial data.
 
 ---
 
-# 📈 Revenue Forecasting
+#  Revenue Forecasting
 
 Forecasting is implemented using **Seasonal Linear Regression** built with Scikit-Learn.
 
@@ -484,7 +504,7 @@ This provides explainable and transparent revenue forecasting.
 
 ---
 
-# 💼 Business Insights Generated
+#  Business Insights Generated
 
 The platform enables executives to answer questions such as:
 
@@ -499,7 +519,7 @@ The platform enables executives to answer questions such as:
 
 ---
 
-# 📊 Business Value Delivered
+#  Business Value Delivered
 
 | Traditional Reporting | Enterprise Analytics Platform |
 |----------------------|-------------------------------|
@@ -512,7 +532,7 @@ The platform enables executives to answer questions such as:
 
 ---
 
-# 🚀 Installation
+#  Installation
 
 ## Clone Repository
 
@@ -568,7 +588,7 @@ streamlit run app/app.py
 
 ---
 
-# ☁️ Deployment
+# Deployment
 
 The production application is deployed using a modern cloud architecture.
 
@@ -586,7 +606,7 @@ https://apple-global-performance-analysis.onrender.com/
 
 ---
 
-# 🔒 Security
+#  Security
 
 Sensitive credentials are **never stored** inside the repository.
 
@@ -606,7 +626,7 @@ This follows production deployment best practices.
 <!-- SKILLS -->
 <!-- ========================================================= -->
 
-# 🧠 Skills Demonstrated
+#  Skills Demonstrated
 
 This project showcases an end-to-end analytics workflow spanning data engineering, business intelligence, machine learning, cloud deployment, and AI integration.
 
@@ -654,9 +674,8 @@ This project showcases an end-to-end analytics workflow spanning data engineerin
 ### AI Integration
 
 - OpenAI GPT-4o
-- Prompt Engineering
 - AI Narrative Generation
-- Executive Insight Generation
+- Business Insight Generation
 
 ### Cloud & Deployment
 
@@ -667,7 +686,7 @@ This project showcases an end-to-end analytics workflow spanning data engineerin
 
 ---
 
-# 💼 Business Impact
+#  Business Impact
 
 The platform demonstrates how traditional financial reporting can be transformed into an interactive executive analytics solution.
 
@@ -682,7 +701,7 @@ The platform demonstrates how traditional financial reporting can be transformed
 
 ---
 
-# 🎯 Project Highlights
+#  Project Highlights
 
 | Feature | Status |
 |---------|:------:|
@@ -698,7 +717,7 @@ The platform demonstrates how traditional financial reporting can be transformed
 
 ---
 
-# 🔮 Future Enhancements
+#  Future Enhancements
 
 Potential future improvements include:
 
@@ -715,7 +734,7 @@ Potential future improvements include:
 
 ---
 
-# 📚 Data Source
+#  Data Source
 
 The financial data used in this project is derived from publicly available Apple financial disclosures.
 
@@ -735,7 +754,7 @@ Customer analytics shown in the application are generated from a **synthetic dat
 
 ---
 
-# 📄 License
+#  License
 
 This repository is intended for educational and portfolio purposes.
 
@@ -743,7 +762,7 @@ The project demonstrates modern data analytics, financial intelligence, machine 
 
 ---
 
-# 👨‍💻 Author
+# 👨 Author
 
 **Ishaan Aditya**
 
@@ -755,8 +774,8 @@ https://github.com/ishaan10802
 LinkedIn:
 *Add your LinkedIn profile URL here.*
 
-Portfolio:
-*Add your portfolio website when available.*
+Email:
+ishaan10802@gmail.com
 
 ---
 
