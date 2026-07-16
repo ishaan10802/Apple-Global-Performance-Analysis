@@ -752,13 +752,10 @@ The project demonstrates modern data analytics, financial intelligence, machine 
 
 **Ishaan Aditya**
 
-Data Analytics | SQL | Python | PostgreSQL | Machine Learning | AI
+Advanced Data Analytics | SQL | Python | PostgreSQL | AI
 
 GitHub:
 https://github.com/ishaan10802
-
-LinkedIn:
-
 
 Email:
 ishaan10802@gmail.com
